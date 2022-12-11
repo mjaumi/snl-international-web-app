@@ -5,6 +5,11 @@ module.exports = {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        'banner-1-img': "linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('/src/assets/images/banner-1.jpg')",
+        'banner-2-img': "linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('/src/assets/images/banner-3.jpg')",
+        'banner-3-img': "linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('/src/assets/images/banner-2.jpg')",
+      },
       fontFamily: {
         'poppins': ["'Poppins'", 'sans-serif'],
       },

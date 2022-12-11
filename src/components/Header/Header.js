@@ -4,7 +4,7 @@ import SNLButton from '../SNLButton/SNLButton';
 
 const Header = () => {
     return (
-        <header className='bg-gray-200 h-[90px]'>
+        <header className='sticky top-0 h-[90px] z-[99999] -mb-[90px]'>
             <nav className='h-full flex justify-between items-center'>
                 <div className='navbar w-[90%] mx-auto'>
                     <div className='navbar-start w-auto'>
@@ -30,7 +30,7 @@ const Header = () => {
                         <Link className='btn btn-ghost normal-case text-xl'>SNL International</Link>
                     </div>
                     <div className='navbar-end w-full'>
-                        <ul className='menu menu-horizontal px-1 text-secondary font-medium'>
+                        <ul className='menu menu-horizontal px-1 text-white font-medium'>
                             <li><Link>About Us</Link></li>
                             <li><Link>About Jute</Link></li>
                             <li><Link>Our Products</Link></li>
@@ -40,7 +40,7 @@ const Header = () => {
                                     Parent
                                     <svg className='fill-current' xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24'><path d='M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z' /></svg>
                                 </Link>
-                                <ul className='p-2 bg-white shadow-md'>
+                                <ul className='p-2 bg-white shadow-md text-secondary'>
                                     <li><Link>Submenu 1</Link></li>
                                     <li><Link>Submenu 1</Link></li>
                                 </ul>
