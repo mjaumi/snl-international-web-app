@@ -1,12 +1,13 @@
 import React from 'react';
 import PageTitle from '../../components/PageTItle/PageTitle';
+import SNLButton from '../../components/SNLButton/SNLButton';
 
 const Home = () => {
     return (
         <section className='flex justify-center'>
             <PageTitle title={'Home'} />
-            <p>this is home</p>
-            <button className='btn btn-secondary text-white rounded-none hover:bg-white capitalize border-4 text-lg font-normal hover:text-secondary'>button</button>
+            <p className='px-12'>this is home</p>
+            <SNLButton content='Contact Us' padX='20' />
         </section>
     );
 };

@@ -1,12 +1,11 @@
+import { RouterProvider } from 'react-router-dom';
 import './App.css';
-import Header from './components/Header/Header';
-import Home from './pages/Home/Home';
+import { routes } from './Routes/Routes';
 
 function App() {
   return (
-    <main data-theme='snl-theme'>
-      <Header />
-      <Home />
+    <main data-theme='snl-theme' className='font-poppins'>
+      <RouterProvider router={routes} />
     </main>
   );
 }
