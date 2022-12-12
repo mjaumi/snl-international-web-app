@@ -49,7 +49,7 @@ const Header = () => {
                             </li>
                             <li><Link>Find Us</Link></li>
                         </ul>
-                        <SNLButton content='contact us' padX='12' bgColor={'transparent'} />
+                        <SNLButton content='contact us' padX='12' />
                     </div>
                 </div>
             </nav>
