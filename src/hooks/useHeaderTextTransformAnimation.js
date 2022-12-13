@@ -5,6 +5,7 @@ import { useState } from 'react';
 const useHeaderTextTransformAnimation = (isBorderAnimationDone, delay) => {
     // definition of react states here
     const [hasSwipedToSlide, setHasSwipedToSlide] = useState(false);
+    const [hasAnimRestarted, setHasAnimRestarted] = useState(false);
 
     const HeaderTextTransformAnimation = useSpring({
         config: { tension: 80, friction: 40 },
@@ -13,10 +14,13 @@ const useHeaderTextTransformAnimation = (isBorderAnimationDone, delay) => {
         to: { x: !hasSwipedToSlide ? '-100%' : '0%' },
         pause: (isBorderAnimationDone && hasSwipedToSlide) ? false : true,
         reset: !hasSwipedToSlide,
+        onStart: () => setHasAnimRestarted(true)
     });
 
     return {
         HeaderTextTransformAnimation,
+        hasAnimRestarted,
+        setHasAnimRestarted,
         setHasSwipedToSlide
     }
 }
