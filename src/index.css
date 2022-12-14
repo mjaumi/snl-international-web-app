@@ -2,15 +2,51 @@
 @tailwind components;
 @tailwind utilities;
 
+body{
+    overflow-y: overlay;
+}
+
+/*-------------------------------
+    Scrollbar Styling 
+---------------------------------*/
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #a0d40534;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: #a0d40588;
+}
+
+/*-------------------------------
+    Swiper.js Styling 
+---------------------------------*/
 .swiper-button-next::after,
 .swiper-button-prev::after,
 .swiper-container-rtl .swiper-button-prev::after,
-.swiper-container-rtl .swiper-button-next::after{
+.swiper-container-rtl .swiper-button-next::after {
     color: #A0D405;
 }
 
-.swiper-pagination-bullet{
+.swiper-pagination-bullet {
     background-color: #A0D405 !important;
+}
+
+.swiper-button-next,
+.swiper-container-rtl .swiper-button-next {
+    margin-right: 10px;
+}
+
+.swiper-button-prev,
+.swiper-container-rtl .swiper-button-prev{
+    margin-left: 10px;
 }
 
 @media screen and (max-width:1024px) {
