@@ -5,6 +5,7 @@ import SectionTitle from '../SectionTitle/SectionTitle';
 const FootprintsAroundTheWorld = () => {
     // integration of react hooks here
     const [countries, setCountries] = useState({ features: [] });
+    const [exporterCountries, setExporterCountries] = useState([]);
     const [dimensions, setDimensions] = useState({ height: 0, width: 0 });
     const [hoverD, setHoverD] = useState();
 
@@ -25,21 +26,31 @@ const FootprintsAroundTheWorld = () => {
         globeEl.current.controls().enableZoom = false;
         globeEl.current.controls().autoRotate = true;
         globeEl.current.controls().autoRotateSpeed = 0.7;
+        globeEl.current.pointOfView({
+            lat: 23.6850,
+            lng: 90.3563,
+            altitude: 2.5
+        }
+            , 0);
 
         fetch('countries.geojson')
             .then(res => res.json())
-            .then(setCountries)
+            .then(setCountries);
+
+        fetch('exporterCountries.json')
+            .then(res => res.json())
+            .then(data => setExporterCountries(data));
     }, []);
 
     // rendering foot prints around the world component here
     return (
         <section className='bg-white py-10'>
             <SectionTitle titleText={'Our Footprints across the globe'} />
-            <div className='w-[90%] mx-auto flex justify-center items-center'>
-                <div className='w-1/2'>
-                    <h1 className='text-9xl font-bold'>Hello World!!!</h1>
+            <div className='w-[95%] md:w-[90%] mx-auto flex flex-col-reverse xl:flex-row justify-center items-center'>
+                <div className='w-full xl:w-2/3'>
+                    <h1 className='2xl:text-9xl font-bold'>Hello World!!!</h1>
                 </div>
-                <div ref={targetDiv} className='w-1/2 h-[80vh] bg-primary overflow-hidden'>
+                <div ref={targetDiv} className='w-full xl:w-1/3 md:h-[50vh] xl:h-[60vh] 2xl:h-[80vh] overflow-hidden'>
                     <Globe
                         ref={globeEl}
                         height={dimensions.height}
@@ -50,20 +61,25 @@ const FootprintsAroundTheWorld = () => {
                         atmosphereColor={'#FAEAB1'}
                         animateIn={true}
                         lineHoverPrecision={0}
+                        pointsData={exporterCountries}
+                        pointRadius={0.4}
+                        pointAltitude={'size'}
+                        pointColor={() => '#C58940'}
+                        pointLabel={'label'}
                         polygonsData={countries.features.filter(d => d.properties.ISO_A2 !== 'AQ')}
-                        polygonAltitude={d => d === hoverD ? 0.12 : 0.01}
-                        polygonCapColor={d => d === hoverD ? 'steelblue' : '#FAEAB1'}
+                        polygonAltitude={d => d === hoverD ? 0.06 : 0.01}
+                        polygonCapColor={() => '#FAEAB1'}
                         polygonSideColor={() => '#E5BA73'}
                         polygonStrokeColor={() => '#C58940'}
                         polygonLabel={({ properties: d }) =>
                             `
-                                <b>${d.ADMIN} (${d.ISO_A2}):</b> <br />
-                                GDP: <i>${d.GDP_MD_EST}</i> M$<br/>
-                                Population: <i>${d.POP_EST}</i>
+                                <b>${d.ADMIN} (${d.ISO_A2})</b> <br />
                             `
                         }
+                        labelColor={() => 'black'}
                         onPolygonHover={setHoverD}
                         polygonsTransitionDuration={300}
+                        pointOf
                     />
                 </div>
             </div>
