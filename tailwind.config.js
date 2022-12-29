@@ -6,13 +6,16 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'banner-1-img': "linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('/src/assets/images/banner-1.jpg')",
-        'banner-2-img': "linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('/src/assets/images/banner-3.jpg')",
-        'banner-3-img': "linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('/src/assets/images/banner-2.jpg')",
+        'banner-1-img': "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/src/assets/images/banner-1.jpg')",
+        'banner-2-img': "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/src/assets/images/banner-2.jpg')",
+        'banner-3-img': "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/src/assets/images/banner-3.jpg')",
       },
       fontFamily: {
         'poppins': ["'Poppins'", 'sans-serif'],
       },
+      boxShadow: {
+        'snl': 'rgba(0, 0, 0, 0.24) 0px 3px 8px',
+      }
     },
   },
   plugins: [require('daisyui')],
@@ -20,11 +23,11 @@ module.exports = {
     themes: [
       {
         'snl-theme': {
-          primary: "#055B00",
-          secondary: "#A0D405",
-          accent: "#37cdbe",
+          primary: "#C58940",
+          secondary: "#E5BA73",
+          accent: "#FAEAB1",
           neutral: "#3d4451",
-          "base-100": "#ffffff",
+          "base-100": "#FAF8F1",
         },
       },
     ],

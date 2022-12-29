@@ -6,7 +6,7 @@ const Header = () => {
 
     // rendering header component here
     return (
-        <header className='sticky top-0 h-[90px] z-[99999] -mb-[90px]'>
+        <header className='w-full absolute top-0 h-[90px] z-[99999] -mb-[90px]'>
             <nav className='h-full flex justify-between items-center'>
                 <div className='navbar w-[90%] mx-auto'>
                     <div className='navbar-start w-auto'>
@@ -15,18 +15,19 @@ const Header = () => {
                                 <svg xmlns='http://www.w3.org/2000/svg' className='h-5 w-5' fill='#FFFFFF' viewBox='0 0 24 24' stroke='currentColor'><path strokeLinecap='round' strokeLinejoin='round' strokeWidth='2' d='M4 6h16M4 12h8m-8 6h16' /></svg>
                             </label>
                             <ul tabIndex={0} className='menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52'>
-                                <li><Link>Item 1</Link></li>
+                                <li><Link>About Us</Link></li>
                                 <li tabIndex={0}>
-                                    <Link className='justify-between'>
-                                        Parent
-                                        <svg className='fill-current' xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'><path d='M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z' /></svg>
+                                    <Link>
+                                        Our Products
+                                        <svg className='fill-current' xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24'><path d='M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z' /></svg>
                                     </Link>
-                                    <ul className='p-2'>
-                                        <li><Link>Submenu 1</Link></li>
-                                        <li><Link>Submenu 2</Link></li>
+                                    <ul className='p-2 bg-base-100 shadow-md text-primary'>
+                                        <li><Link>Jute Products</Link></li>
+                                        <li><Link>Diversified Jute Products</Link></li>
                                     </ul>
                                 </li>
-                                <li><Link>Item 3</Link></li>
+                                <li><Link>Our Sister Concerns</Link></li>
+                                <li><Link>Blogs</Link></li>
                             </ul>
                         </div>
                         <Link className='btn btn-ghost normal-case text-xl'>SNL International</Link>
@@ -34,20 +35,18 @@ const Header = () => {
                     <div className='navbar-end hidden lg:w-full lg:flex justify-end'>
                         <ul className='menu menu-horizontal px-1 text-white font-medium'>
                             <li><Link>About Us</Link></li>
-                            <li><Link>About Jute</Link></li>
-                            <li><Link>Our Products</Link></li>
-                            <li><Link>CEO Quotes</Link></li>
                             <li tabIndex={0}>
                                 <Link>
-                                    Parent
+                                    Our Products
                                     <svg className='fill-current' xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24'><path d='M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z' /></svg>
                                 </Link>
-                                <ul className='p-2 bg-white shadow-md text-secondary'>
-                                    <li><Link>Submenu 1</Link></li>
-                                    <li><Link>Submenu 1</Link></li>
+                                <ul className='p-2 bg-base-100 shadow-md text-primary'>
+                                    <li><Link>Jute Products</Link></li>
+                                    <li><Link>Diversified Jute Products</Link></li>
                                 </ul>
                             </li>
-                            <li><Link>Find Us</Link></li>
+                            <li><Link>Our Sister Concerns</Link></li>
+                            <li><Link>Blogs</Link></li>
                         </ul>
                         <SNLButton content='contact us' padX='12' />
                     </div>

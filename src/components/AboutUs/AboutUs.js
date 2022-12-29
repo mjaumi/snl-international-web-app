@@ -1,22 +1,42 @@
 import React from 'react';
+import { animated } from '@react-spring/web';
 import aboutImage1 from '../../assets/images/about-1.jpg';
 import aboutImage2 from '../../assets/images/about-2.jpg';
+import useSectionImageAnimation from '../../hooks/useSectionImageAnimation';
+import SectionTitle from '../SectionTitle/SectionTitle';
 
 const AboutUs = () => {
+    // declaration of react-spring hooks here
+    const firstImageAnim = useSectionImageAnimation({
+        top: '50%',
+        right: '0%'
+    }, {
+        top: '40%',
+        right: '-15%'
+    });
+
+    const secondImageAnim = useSectionImageAnimation({
+        top: '50%',
+        left: '50%'
+    }, {
+        top: '65%',
+        left: '30%'
+    });
+
+
+    // rendering about use section here
     return (
         <section className='w-[90%] mx-auto py-10'>
-            <div className='relative font-bold text-6xl capitalize flex justify-center my-10 w-fit mx-auto'>
-                <h1 className='text-primary px-4 pb-3'>Who are we?</h1>
-                <div className='absolute h-2 w-full bg-primary bottom-0'></div>
-            </div>
+            <SectionTitle titleText={'who are we ?'} />
             <div className='flex'>
                 <div className='w-1/2 relative flex justify-center'>
-                    <div className='absolute left-20 bottom-10 h-[400px] w-[400px]'>
-                        <img className='w-full' src={aboutImage2} alt='our office' />
-                    </div>
-                    <div className='absolute right-20 top-10 h-[400px] w-[400px]'>
-                        <img className='w-full' src={aboutImage1} alt='meeting room' />
-                    </div>
+                    <animated.img style={firstImageAnim.sectionImageAnimation} className='absolute top-1/2 -translate-x-1/2 -translate-y-1/2 h-[400px] w-[400px] shadow-snl' src={aboutImage2} alt='our office' />
+                    <div className='absolute w-2 h-20 bg-primary left-16 bottom-6'></div>
+                    <div className='absolute w-20 h-2 bg-primary left-16 bottom-6'></div>
+
+                    <animated.img style={secondImageAnim.sectionImageAnimation} className='absolute top-1/2 -translate-x-1/2 -translate-y-1/2 h-[400px] w-[400px] shadow-snl' src={aboutImage1} alt='meeting room' />
+                    <div className='absolute w-2 h-20 bg-primary right-16 top-6'></div>
+                    <div className='absolute w-20 h-2 bg-primary right-16 top-6'></div>
                 </div>
                 <div className='w-1/2'>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa iure minus perspiciatis? Excepturi, similique suscipit iste quidem quis commodi repellendus deserunt possimus voluptatibus consequuntur ex non veniam obcaecati id esse.

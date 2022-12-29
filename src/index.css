@@ -14,7 +14,7 @@ body{
 }
 
 ::-webkit-scrollbar-track {
-    background-color: #a0d40534;
+    background-color: #e5b97354;
     -webkit-border-radius: 10px;
     border-radius: 10px;
 }
@@ -22,7 +22,7 @@ body{
 ::-webkit-scrollbar-thumb {
     -webkit-border-radius: 10px;
     border-radius: 10px;
-    background: #a0d40588;
+    background: #e5b973e3;
 }
 
 /*-------------------------------
@@ -32,11 +32,11 @@ body{
 .swiper-button-prev::after,
 .swiper-container-rtl .swiper-button-prev::after,
 .swiper-container-rtl .swiper-button-next::after {
-    color: #A0D405;
+    color: #E5BA73;
 }
 
 .swiper-pagination-bullet {
-    background-color: #A0D405 !important;
+    background-color: #E5BA73 !important;
 }
 
 .swiper-button-next,
