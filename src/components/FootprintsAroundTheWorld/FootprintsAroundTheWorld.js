@@ -65,7 +65,11 @@ const FootprintsAroundTheWorld = () => {
                         pointRadius={0.4}
                         pointAltitude={'size'}
                         pointColor={() => '#C58940'}
-                        pointLabel={'label'}
+                        pointLabel={(country) =>
+                            `
+                                <b style="color:#3A3627">${country.label}</b>
+                            `
+                        }
                         polygonsData={countries.features.filter(d => d.properties.ISO_A2 !== 'AQ')}
                         polygonAltitude={d => d === hoverD ? 0.06 : 0.01}
                         polygonCapColor={() => '#FAEAB1'}
@@ -73,10 +77,9 @@ const FootprintsAroundTheWorld = () => {
                         polygonStrokeColor={() => '#C58940'}
                         polygonLabel={({ properties: d }) =>
                             `
-                                <b>${d.ADMIN} (${d.ISO_A2})</b> <br />
+                                <b style="color:#3A3627">${d.ADMIN} (${d.ISO_A2})</b>
                             `
                         }
-                        labelColor={() => 'black'}
                         onPolygonHover={setHoverD}
                         polygonsTransitionDuration={300}
                         pointOf
