@@ -12,6 +12,7 @@ module.exports = {
       },
       fontFamily: {
         'poppins': ["'Poppins'", 'sans-serif'],
+        'dancing-script': ["'Dancing Script'", 'cursive'],
       },
       boxShadow: {
         'snl': 'rgba(0, 0, 0, 0.24) 0px 3px 8px',

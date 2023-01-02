@@ -58,7 +58,7 @@ const Footer = () => {
                         <div className='my-4 ml-0 xl:ml-5'>
                             <div className='flex justify-center xl:justify-start'>
                                 <a href='https://www.facebook.com/profile.php?id=100087734663658' className='bg-neutral h-10 w-10 flex items-center justify-center rounded-md mr-4 hover:scale-125 duration-300' target='_blank' rel='noreferrer'><FaFacebookF className='text-accent h-5 w-5' /></a>
-                                <a href='https://www.facebook.com/profile.php?id=100087734663658' className='bg-neutral h-10 w-10 flex items-center justify-center rounded-md hover:scale-125 duration-300' target='_blank' rel='noreferrer'><BsInstagram className='text-accent h-5 w-5' /></a>
+                                <a href='https://instagram.com/snl_bangladesh?igshid=YmMyMTA2M2Y=' className='bg-neutral h-10 w-10 flex items-center justify-center rounded-md hover:scale-125 duration-300' target='_blank' rel='noreferrer'><BsInstagram className='text-accent h-5 w-5' /></a>
                             </div>
                         </div>
                     </div>

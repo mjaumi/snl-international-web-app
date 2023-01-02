@@ -27,7 +27,7 @@ const FootprintsAroundTheWorld = () => {
                 <div className='w-full xl:w-2/3'>
                     <h1 className='2xl:text-9xl font-bold'>Hello World!!!</h1>
                 </div>
-                <div ref={targetDiv} className='w-full xl:w-1/3 md:h-[50vh] xl:h-[60vh] 2xl:h-[80vh] overflow-hidden'>
+                <div ref={targetDiv} className='w-full xl:w-1/3 h-[50vh] xl:h-[60vh] 2xl:h-[80vh] overflow-hidden'>
                     <SNLGlobe dimensions={dimensions} />
                 </div>
             </div>
