@@ -64,7 +64,7 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-            <div className='w-full h-[1px] bg-primary'></div>
+            <div className='w-full h-[1px] bg-primary/70'></div>
             <div className='w-[95%] xl:w-[90%] mx-auto py-2'>
                 <p className='text-sm font-medium text-center xl:text-left'><AiOutlineCopyrightCircle className='inline mr-1' />SNL International, 2022.</p>
             </div>
