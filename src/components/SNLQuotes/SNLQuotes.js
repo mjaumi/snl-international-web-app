@@ -6,7 +6,7 @@ const SNLQuotes = ({ quote, bgImage }) => {
 
     // rendering SNL quotes component here
     return (
-        <div className='relative h-40 xl:h-64 border-t-4 border-b-4 border-primary'>
+        <div className='relative h-40 xl:h-80 border-t-4 border-b-4 border-primary'>
             <Parallax strength={500} className='h-full'>
                 <Background className='w-full h-full'>
                     <div className={`w-screen h-[2000px] bg-no-repeat bg-center bg-cover ${bgImage}`}>

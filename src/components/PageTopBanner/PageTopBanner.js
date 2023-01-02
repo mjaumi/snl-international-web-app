@@ -16,7 +16,7 @@ const PageTopBanner = ({ bgImage, titleText }) => {
 
     // rendering top page banner component here
     return (
-        <div className='relative h-[70vh] w-full'>
+        <div className='relative h-[80vh] w-full'>
             <Parallax strength={500} className='h-full'>
                 <Background className='w-full h-full'>
                     <div className={`w-screen h-[2000px] bg-no-repeat bg-center bg-cover ${bgImage}`}>
