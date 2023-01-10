@@ -3,6 +3,7 @@ import { useInViewport } from 'react-in-viewport';
 import { Link } from 'react-router-dom';
 import SNLButton from '../SNLButton/SNLButton';
 import StickyHeader from '../StickyHeader/StickyHeader';
+import { BiSupport } from 'react-icons/bi';
 
 const Header = () => {
     // integration of react hooks here
@@ -35,7 +36,7 @@ const Header = () => {
                                             <li><Link>Diversified Jute Products</Link></li>
                                         </ul>
                                     </li>
-                                    <li><Link>Our Sister Concerns</Link></li>
+                                    <li><Link to={'/sister-concerns'}>Our Sister Concerns</Link></li>
                                     <li><Link>Blogs</Link></li>
                                 </ul>
                             </div>
@@ -54,10 +55,12 @@ const Header = () => {
                                         <li><Link>Diversified Jute Products</Link></li>
                                     </ul>
                                 </li>
-                                <li><Link>Our Sister Concerns</Link></li>
+                                <li><Link to={'/sister-concerns'}>Our Sister Concerns</Link></li>
                                 <li><Link>Blogs</Link></li>
                             </ul>
-                            <SNLButton content='contact us' additionalClassNames={'px-6 btn-secondary text-secondary after:bg-secondary'} />
+                            <Link to={'/contact-us'}>
+                                <SNLButton btnType='submit' icon={<BiSupport className='z-50 h-6 w-6 mr-2' />} content='contact us' additionalClassNames={'px-6 btn-secondary text-secondary after:bg-secondary'} />
+                            </Link>
                         </div>
                     </div>
                 </nav>

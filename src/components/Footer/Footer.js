@@ -36,7 +36,7 @@ const Footer = () => {
                     <div className='text-center xl:text-left'>
                         <h5 className='text-xl font-semibold'>Contact Information:</h5>
                         <div className='my-4 ml-0 xl:ml-5'>
-                            <h5 className='text-lg font-medium mb-2'>Phone Us:</h5>
+                            <h5 className='text-lg font-medium mb-2'>Call Us:</h5>
                             <p className='mb-1'><BsTelephoneFill className='inline mr-2' /> +8801788744803 (Hotline)</p>
                             <p className='mb-1'><BsTelephoneFill className='inline mr-2' /> +8801788744803 (Queries)</p>
                             <p><BsTelephoneFill className='inline mr-2' /> +8801788744803 (Toll Free)</p>
@@ -54,7 +54,7 @@ const Footer = () => {
                         <div className='my-4 ml-0 xl:ml-5 border-2 border-primary h-32 w-full'>
                             <span>Google maps instance here</span>
                         </div>
-                        <h5 className='text-xl font-semibold'>Find Us On Social Media:</h5>
+                        <h5 className='text-xl font-semibold'>Follow Us On Social Media:</h5>
                         <div className='my-4 ml-0 xl:ml-5'>
                             <div className='flex justify-center xl:justify-start'>
                                 <a href='https://www.facebook.com/profile.php?id=100087734663658' className='bg-neutral h-10 w-10 flex items-center justify-center rounded-md mr-4 hover:scale-125 duration-300' target='_blank' rel='noreferrer'><FaFacebookF className='text-accent h-5 w-5' /></a>

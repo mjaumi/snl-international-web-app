@@ -124,5 +124,41 @@
         "lat": 61.5240,
         "lng": 105.3188,
         "size": 0.2
+    },
+    {
+        "label": "Azerbaijan (AZ)",
+        "lat": 40.1431,
+        "lng": 47.5769,
+        "size": 0.2
+    },
+    {
+        "label": "Belarus (BY)",
+        "lat": 53.7098,
+        "lng": 27.9534,
+        "size": 0.2
+    },
+    {
+        "label": "Kazakhstan (KZ)",
+        "lat": 48.0196,
+        "lng": 66.9237,
+        "size": 0.2
+    },
+    {
+        "label": "Kyrgyzstan (KG)",
+        "lat": 41.2044,
+        "lng": 74.7661,
+        "size": 0.2
+    },
+    {
+        "label": "Tajikistan (TJ)",
+        "lat": 38.8610,
+        "lng": 71.2761,
+        "size": 0.2
+    },
+    {
+        "label": "Turkmenistan (TM)",
+        "lat": 38.9697,
+        "lng": 59.5133,
+        "size": 0.2
     }
 ]

@@ -1,4 +1,5 @@
 import React from 'react';
+import { BiSupport } from 'react-icons/bi';
 import { Link } from 'react-router-dom';
 import SNLButton from '../SNLButton/SNLButton';
 
@@ -26,7 +27,7 @@ const StickyHeader = ({ isHeaderInViewport }) => {
                                         <li><Link>Diversified Jute Products</Link></li>
                                     </ul>
                                 </li>
-                                <li><Link>Our Sister Concerns</Link></li>
+                                <li><Link to={'/sister-concerns'}>Our Sister Concerns</Link></li>
                                 <li><Link>Blogs</Link></li>
                             </ul>
                         </div>
@@ -45,10 +46,12 @@ const StickyHeader = ({ isHeaderInViewport }) => {
                                     <li><Link>Diversified Jute Products</Link></li>
                                 </ul>
                             </li>
-                            <li><Link>Our Sister Concerns</Link></li>
+                            <li><Link to={'/sister-concerns'}>Our Sister Concerns</Link></li>
                             <li><Link>Blogs</Link></li>
                         </ul>
-                        <SNLButton content='contact us' additionalClassNames={'px-6 btn-neutral text-neutral after:bg-neutral'} />
+                        <Link to={'/contact-us'}>
+                            <SNLButton btnType='submit' icon={<BiSupport className='z-50 h-6 w-6 mr-2' />} content='contact us' additionalClassNames={'px-6 btn-neutral text-neutral after:bg-neutral'} />
+                        </Link>
                     </div>
                 </div>
             </nav>

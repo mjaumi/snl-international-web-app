@@ -2,14 +2,14 @@ import React from 'react';
 import { RiDoubleQuotesL, RiDoubleQuotesR } from 'react-icons/ri';
 import { Background, Parallax } from 'react-parallax';
 
-const SNLQuotes = ({ quote, bgImage }) => {
+const SNLQuotes = ({ quote }) => {
 
     // rendering SNL quotes component here
     return (
         <div className='relative h-40 xl:h-80 border-t-4 border-b-4 border-primary'>
             <Parallax strength={500} className='h-full'>
                 <Background className='w-full h-full'>
-                    <div className={`w-screen h-[2000px] bg-no-repeat bg-center bg-cover ${bgImage}`}>
+                    <div className='bg-quotes-img w-screen h-[1000px] bg-no-repeat bg-center bg-cover'>
                     </div>
                 </Background>
             </Parallax>

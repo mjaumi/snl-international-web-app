@@ -9,6 +9,7 @@ module.exports = {
         'banner-1-img': "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/src/assets/images/banner-1.JPG')",
         'banner-2-img': "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/src/assets/images/banner-2.JPG')",
         'banner-3-img': "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/src/assets/images/banner-3.JPG')",
+        'quotes-img': "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/src/assets/images/quotes-bg.JPG')",
       },
       fontFamily: {
         'poppins': ["'Poppins'", 'sans-serif'],
