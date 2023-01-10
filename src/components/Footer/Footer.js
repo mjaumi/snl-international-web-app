@@ -36,13 +36,13 @@ const Footer = () => {
                     <div className='text-center xl:text-left'>
                         <h5 className='text-xl font-semibold'>Contact Information:</h5>
                         <div className='my-4 ml-0 xl:ml-5'>
-                            <h5 className='text-lg font-medium mb-2'>Call Us:</h5>
+                            <h5 className='text-lg font-medium mb-2'>Call Us Today:</h5>
                             <p className='mb-1'><BsTelephoneFill className='inline mr-2' /> +8801788744803 (Hotline)</p>
                             <p className='mb-1'><BsTelephoneFill className='inline mr-2' /> +8801788744803 (Queries)</p>
                             <p><BsTelephoneFill className='inline mr-2' /> +8801788744803 (Toll Free)</p>
                         </div>
                         <div className='my-4 ml-0 xl:ml-5'>
-                            <h5 className='text-lg font-medium mb-2'>Email Us:</h5>
+                            <h5 className='text-lg font-medium mb-2'>Mail Us Now:</h5>
                             <p className='mb-1'><MdEmail className='inline mr-2' /> snljute@gmail.com</p>
                             <p><MdEmail className='inline mr-2' /> snljute@gmail.com</p>
                         </div>

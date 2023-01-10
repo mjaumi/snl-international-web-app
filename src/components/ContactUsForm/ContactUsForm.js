@@ -27,13 +27,13 @@ const ContactUsForm = () => {
                                     </div>
                                 </div>
                                 <div className='my-4'>
-                                    <h5 className='text-lg font-medium mb-2'>Phone Us:</h5>
+                                    <h5 className='text-lg font-medium mb-2'>Call Us Today:</h5>
                                     <p className='mb-1'><BsTelephoneFill className='inline mr-2' /> +8801788744803 (Hotline)</p>
                                     <p className='mb-1'><BsTelephoneFill className='inline mr-2' /> +8801788744803 (Queries)</p>
                                     <p><BsTelephoneFill className='inline mr-2' /> +8801788744803 (Toll Free)</p>
                                 </div>
                                 <div className='my-4'>
-                                    <h5 className='text-lg font-medium mb-2'>Email Us:</h5>
+                                    <h5 className='text-lg font-medium mb-2'>Mail Us Now:</h5>
                                     <p className='mb-1'><MdEmail className='inline mr-2' /> snljute@gmail.com</p>
                                     <p><MdEmail className='inline mr-2' /> snljute@gmail.com</p>
                                 </div>
@@ -44,7 +44,10 @@ const ContactUsForm = () => {
                                 <div className='xl:flex'>
                                     <div className='form-control w-full xl:mr-3'>
                                         <label className='label'>
-                                            <span className='label-text'>First Name</span>
+                                            <span className='label-text'>
+                                                First Name
+                                                <span className='font-bold text-lg'>*</span>
+                                            </span>
                                         </label>
                                         <input type='text' placeholder='Your Name Here' className='input input-bordered w-full bg-transparent border-neutral border-2 font-medium text-neutral placeholder:text-neutral/50' />
                                         <label className='label'>
@@ -53,7 +56,10 @@ const ContactUsForm = () => {
                                     </div>
                                     <div className='form-control w-full'>
                                         <label className='label'>
-                                            <span className='label-text'>Last Name</span>
+                                            <span className='label-text'>
+                                                Last Name
+                                                <span className='font-bold text-lg'>*</span>
+                                            </span>
                                         </label>
                                         <input type='text' placeholder='Your Name Here' className='input input-bordered w-full bg-transparent border-neutral border-2 font-medium text-neutral placeholder:text-neutral/50' />
                                         <label className='label'>
@@ -64,7 +70,10 @@ const ContactUsForm = () => {
                                 <div>
                                     <div className='form-control w-full'>
                                         <label className='label'>
-                                            <span className='label-text'>Email</span>
+                                            <span className='label-text'>
+                                                Email
+                                                <span className='font-bold text-lg'>*</span>
+                                            </span>
                                         </label>
                                         <input type='email' placeholder='Your Email Here' className='input input-bordered w-full bg-transparent border-neutral border-2 font-medium text-neutral placeholder:text-neutral/50' />
                                         <label className='label'>
@@ -75,7 +84,10 @@ const ContactUsForm = () => {
                                 <div>
                                     <div className='form-control w-full'>
                                         <label className='label'>
-                                            <span className='label-text'>Subject</span>
+                                            <span className='label-text'>
+                                                Subject
+                                                <span className='font-bold text-lg'>*</span>
+                                            </span>
                                         </label>
                                         <input type='text' placeholder='Your Email Subject Here' className='input input-bordered w-full bg-transparent border-neutral border-2 font-medium text-neutral placeholder:text-neutral/50' />
                                         <label className='label'>
@@ -86,7 +98,10 @@ const ContactUsForm = () => {
                                 <div>
                                     <div className='form-control'>
                                         <label className='label'>
-                                            <span className='label-text'>Your Message</span>
+                                            <span className='label-text'>
+                                                Your Message
+                                                <span className='font-bold text-lg'>*</span>
+                                            </span>
                                         </label>
                                         <textarea className='textarea textarea-bordered h-40 bg-transparent border-neutral border-2 font-medium text-neutral placeholder:text-neutral/50' placeholder='Type Your Message Here...'></textarea>
                                         <label className='label'>

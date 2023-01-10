@@ -15,9 +15,9 @@ const SectionTitle = ({ titleText }) => {
 
     // rendering section title component here
     return (
-        <div ref={titleRef} className='relative font-bold text-3xl md:text-5xl capitalize flex justify-center my-10 w-fit mx-auto'>
+        <div ref={titleRef} className='relative font-bold text-3xl md:text-4xl 2xl:text-5xl capitalize flex justify-center my-10 w-fit mx-auto'>
             <h1 className='text-primary text-center px-4 pb-3'>{titleText}</h1>
-            <animated.div style={titleAnimation.titleUnderlineAnimation} className='absolute h-1 md:h-2 bg-primary bottom-0 left-0'></animated.div>
+            <animated.div style={titleAnimation.titleUnderlineAnimation} className='absolute h-1 2xl:h-2 bg-primary bottom-0 left-0'></animated.div>
         </div>
     );
 };

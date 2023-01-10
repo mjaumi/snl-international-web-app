@@ -1,10 +1,10 @@
 import React, { useEffect, useRef, useState } from 'react';
 import Globe from 'react-globe.gl';
 
-const SNLGlobe = ({ dimensions }) => {
+const SNLGlobe = ({ dimensions, exporterCountries }) => {
     // integration of react hooks here
     const [countries, setCountries] = useState({ features: [] });
-    const [exporterCountries, setExporterCountries] = useState([]);
+
     const [hoverD, setHoverD] = useState();
 
     const globeEl = useRef();
@@ -34,10 +34,6 @@ const SNLGlobe = ({ dimensions }) => {
         fetch('countries.geojson')
             .then(res => res.json())
             .then(setCountries);
-
-        fetch('exporterCountries.json')
-            .then(res => res.json())
-            .then(data => setExporterCountries(data));
     }, []);
 
 
