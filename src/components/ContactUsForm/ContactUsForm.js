@@ -1,11 +1,48 @@
-import React from 'react';
-import SNLButton from '../SNLButton/SNLButton';
+import React, { useRef, useState } from 'react';
+import emailjs from '@emailjs/browser';
+import { MdEmail } from 'react-icons/md';
 import { IoIosSend } from 'react-icons/io';
+import SNLButton from '../SNLButton/SNLButton';
 import { FaMapMarkerAlt } from 'react-icons/fa';
 import { BsTelephoneFill } from 'react-icons/bs';
-import { MdEmail } from 'react-icons/md';
+import { toast } from 'react-toastify';
 
 const ContactUsForm = () => {
+    // integration of react hooks here
+    const [sendingMail, setSendingMail] = useState(false);
+
+
+    /*const [firstNameError, setFirstNameError] = useState(false);
+    const [lastNameError, setLastNameError] = useState(false);
+    const [emailError, setEmailError] = useState(false);
+    const [subjectError, setSubjectError] = useState(false);
+    const [messageError, setMessageError] = useState(false);
+
+    const firstNameRef = useRef();
+    const lastNameRef = useRef();
+    const emailRef = useRef();
+    const subjectRef = useRef();
+    const messageRef = useRef();*/
+
+
+    // handling form submission here
+    const submitForm = e => {
+        e.preventDefault();
+
+        setSendingMail(true);
+
+        emailjs.sendForm(process.env.REACT_APP_SERVICE_ID, process.env.REACT_APP_TEMPLATE_ID, e.target, process.env.REACT_APP_PUBLIC_KEY)
+            .then(res => {
+                toast.success('Got Your Email!! We Will Contact With You Soon.');
+                e.target.reset();
+                setSendingMail(false);
+            })
+            .catch(err => {
+                toast.error('Something Went Wrong!! Please, Try Again Later');
+                e.target.reset();
+                setSendingMail(false);
+            });
+    }
 
     // rendering contact us form here
     return (
@@ -40,7 +77,7 @@ const ContactUsForm = () => {
                             </div>
                         </div>
                         <div className='mt-8 xl:mt-0'>
-                            <form>
+                            <form onSubmit={submitForm}>
                                 <div className='xl:flex'>
                                     <div className='form-control w-full xl:mr-3'>
                                         <label className='label'>
@@ -49,9 +86,9 @@ const ContactUsForm = () => {
                                                 <span className='font-bold text-lg'>*</span>
                                             </span>
                                         </label>
-                                        <input type='text' placeholder='Your Name Here' className='input input-bordered w-full bg-transparent border-neutral border-2 font-medium text-neutral placeholder:text-neutral/50' />
+                                        <input type='text' name='firstName' placeholder='Your First Name Here' className='input input-bordered w-full bg-transparent border-neutral border-2 font-medium text-neutral placeholder:text-neutral/50' required />
                                         <label className='label'>
-                                            <span className='label-text-alt text-red-600'>Alt label</span>
+                                            <span className={`'invisible' label-text-alt text-red-600`}>First name is required</span>
                                         </label>
                                     </div>
                                     <div className='form-control w-full'>
@@ -61,9 +98,9 @@ const ContactUsForm = () => {
                                                 <span className='font-bold text-lg'>*</span>
                                             </span>
                                         </label>
-                                        <input type='text' placeholder='Your Name Here' className='input input-bordered w-full bg-transparent border-neutral border-2 font-medium text-neutral placeholder:text-neutral/50' />
+                                        <input type='text' name='lastName' placeholder='Your Last Name Here' className='input input-bordered w-full bg-transparent border-neutral border-2 font-medium text-neutral placeholder:text-neutral/50' required />
                                         <label className='label'>
-                                            <span className='label-text-alt text-red-600'>Alt label</span>
+                                            <span className={`'invisible' label-text-alt text-red-600`}>Last name is required</span>
                                         </label>
                                     </div>
                                 </div>
@@ -75,9 +112,10 @@ const ContactUsForm = () => {
                                                 <span className='font-bold text-lg'>*</span>
                                             </span>
                                         </label>
-                                        <input type='email' placeholder='Your Email Here' className='input input-bordered w-full bg-transparent border-neutral border-2 font-medium text-neutral placeholder:text-neutral/50' />
+                                        <input type='email' name='email' placeholder='Your Email Here' className='input input-bordered w-full bg-transparent border-neutral border-2 font-medium text-neutral placeholder:text-neutral/50' required />
                                         <label className='label'>
-                                            <span className='label-text-alt text-red-600'>Alt label</span>
+                                            <span className={`'invisible' label-text-alt text-red-600`}>Email is required</span>
+                                            <span className={`'invisible' label-text-alt text-red-600`}>Invalid Email address</span>
                                         </label>
                                     </div>
                                 </div>
@@ -89,9 +127,9 @@ const ContactUsForm = () => {
                                                 <span className='font-bold text-lg'>*</span>
                                             </span>
                                         </label>
-                                        <input type='text' placeholder='Your Email Subject Here' className='input input-bordered w-full bg-transparent border-neutral border-2 font-medium text-neutral placeholder:text-neutral/50' />
+                                        <input type='text' name='subject' placeholder='Your Email Subject Here' className='input input-bordered w-full bg-transparent border-neutral border-2 font-medium text-neutral placeholder:text-neutral/50' required />
                                         <label className='label'>
-                                            <span className='label-text-alt text-red-600'>Alt label</span>
+                                            <span className={`'invisible' label-text-alt text-red-600`}>Subject is required</span>
                                         </label>
                                     </div>
                                 </div>
@@ -103,14 +141,14 @@ const ContactUsForm = () => {
                                                 <span className='font-bold text-lg'>*</span>
                                             </span>
                                         </label>
-                                        <textarea className='textarea textarea-bordered h-40 bg-transparent border-neutral border-2 font-medium text-neutral placeholder:text-neutral/50' placeholder='Type Your Message Here...'></textarea>
+                                        <textarea name='message' className='textarea textarea-bordered h-40 bg-transparent border-neutral border-2 font-medium text-neutral placeholder:text-neutral/50' placeholder='Type Your Message Here...' required></textarea>
                                         <label className='label'>
-                                            <span className='label-text-alt text-red-600'>Your bio</span>
+                                            <span className={`'invisible' label-text-alt text-red-600`}>Message is required</span>
                                         </label>
                                     </div>
                                 </div>
                                 <div className='mt-4 flex justify-center'>
-                                    <SNLButton btnType='submit' icon={<IoIosSend className='z-50 h-6 w-6 mr-2' />} content='Send Mail' additionalClassNames={'w-full xl:w-fit px-12 btn-neutral text-neutral after:bg-neutral'} />
+                                    <SNLButton isLoading={sendingMail} btnType='submit' icon={<IoIosSend className='z-50 h-6 w-6 mr-2' />} content='Send Mail' additionalClassNames={'w-full xl:w-fit px-12 btn-neutral text-neutral after:bg-neutral'} />
                                 </div>
                             </form>
                         </div>

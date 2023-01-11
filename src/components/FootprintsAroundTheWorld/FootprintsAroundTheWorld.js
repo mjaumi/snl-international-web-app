@@ -35,12 +35,12 @@ const FootprintsAroundTheWorld = () => {
                     <div className='w-4/5 mx-auto md:mx-0 2xl:mx-0 2xl:w-2/3 grid grid-cols-1 md:grid-cols-2 mt-10'>
                         <div>
                             {
-                                exporterCountries.slice(0, Math.ceil(exporterCountries.length / 2)).map(country => <ExporterCountryListItem id={country._id} countryName={country.label} />)
+                                exporterCountries.slice(0, Math.ceil(exporterCountries.length / 2)).map(country => <ExporterCountryListItem key={country._id} countryName={country.label} />)
                             }
                         </div>
                         <div>
                             {
-                                exporterCountries.slice(Math.ceil(exporterCountries.length / 2), exporterCountries.length).map(country => <ExporterCountryListItem id={country._id} countryName={country.label} />)
+                                exporterCountries.slice(Math.ceil(exporterCountries.length / 2), exporterCountries.length).map(country => <ExporterCountryListItem key={country._id} countryName={country.label} />)
                             }
                         </div>
                     </div>
