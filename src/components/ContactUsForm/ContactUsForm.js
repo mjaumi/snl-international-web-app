@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React, { useState } from 'react';
 import emailjs from '@emailjs/browser';
 import { MdEmail } from 'react-icons/md';
 import { IoIosSend } from 'react-icons/io';
@@ -10,38 +10,48 @@ import { toast } from 'react-toastify';
 const ContactUsForm = () => {
     // integration of react hooks here
     const [sendingMail, setSendingMail] = useState(false);
-
-
-    /*const [firstNameError, setFirstNameError] = useState(false);
+    const [firstNameError, setFirstNameError] = useState(false);
     const [lastNameError, setLastNameError] = useState(false);
     const [emailError, setEmailError] = useState(false);
     const [subjectError, setSubjectError] = useState(false);
     const [messageError, setMessageError] = useState(false);
 
-    const firstNameRef = useRef();
-    const lastNameRef = useRef();
-    const emailRef = useRef();
-    const subjectRef = useRef();
-    const messageRef = useRef();*/
-
-
     // handling form submission here
     const submitForm = e => {
         e.preventDefault();
 
-        setSendingMail(true);
+        const data = {
+            firstName: e.target.firstName.value,
+            lastName: e.target.lastName.value,
+            email: e.target.email.value,
+            subject: e.target.subject.value,
+            message: e.target.message.value,
+        }
 
-        emailjs.sendForm(process.env.REACT_APP_SERVICE_ID, process.env.REACT_APP_TEMPLATE_ID, e.target, process.env.REACT_APP_PUBLIC_KEY)
-            .then(res => {
-                toast.success('Got Your Email!! We Will Contact With You Soon.');
-                e.target.reset();
-                setSendingMail(false);
-            })
-            .catch(err => {
-                toast.error('Something Went Wrong!! Please, Try Again Later');
-                e.target.reset();
-                setSendingMail(false);
-            });
+        console.log(Object.values(data).filter(val => val === ''));
+
+        setFirstNameError(data.firstName === '' ? true : false);
+        setLastNameError(data.lastName === '' ? true : false);
+        setEmailError(data.email === '' ? true : false);
+        setSubjectError(data.subject === '' ? true : false);
+        setMessageError(data.message === '' ? true : false);
+
+        if (Object.values(data).filter(val => val === '').length === 0) {
+
+            setSendingMail(true);
+
+            emailjs.sendForm(process.env.REACT_APP_SERVICE_ID, process.env.REACT_APP_TEMPLATE_ID, e.target, process.env.REACT_APP_PUBLIC_KEY)
+                .then(res => {
+                    toast.success('Got Your Email!! We Will Contact With You Soon.');
+                    e.target.reset();
+                    setSendingMail(false);
+                })
+                .catch(err => {
+                    toast.error('Something Went Wrong!! Please, Try Again Later');
+                    e.target.reset();
+                    setSendingMail(false);
+                });
+        }
     }
 
     // rendering contact us form here
@@ -86,9 +96,9 @@ const ContactUsForm = () => {
                                                 <span className='font-bold text-lg'>*</span>
                                             </span>
                                         </label>
-                                        <input type='text' name='firstName' placeholder='Your First Name Here' className='input input-bordered w-full bg-transparent border-neutral border-2 font-medium text-neutral placeholder:text-neutral/50' required />
+                                        <input type='text' name='firstName' placeholder='Your First Name Here' className='input input-bordered w-full bg-transparent border-neutral border-2 font-medium text-neutral placeholder:text-neutral/50' />
                                         <label className='label'>
-                                            <span className={`'invisible' label-text-alt text-red-600`}>First name is required</span>
+                                            <span className={`${firstNameError ? 'visible' : 'invisible'} label-text-alt text-red-600`}>First name is required</span>
                                         </label>
                                     </div>
                                     <div className='form-control w-full'>
@@ -98,9 +108,9 @@ const ContactUsForm = () => {
                                                 <span className='font-bold text-lg'>*</span>
                                             </span>
                                         </label>
-                                        <input type='text' name='lastName' placeholder='Your Last Name Here' className='input input-bordered w-full bg-transparent border-neutral border-2 font-medium text-neutral placeholder:text-neutral/50' required />
+                                        <input type='text' name='lastName' placeholder='Your Last Name Here' className='input input-bordered w-full bg-transparent border-neutral border-2 font-medium text-neutral placeholder:text-neutral/50' />
                                         <label className='label'>
-                                            <span className={`'invisible' label-text-alt text-red-600`}>Last name is required</span>
+                                            <span className={`${lastNameError ? 'visible' : 'invisible'}  label-text-alt text-red-600`}>Last name is required</span>
                                         </label>
                                     </div>
                                 </div>
@@ -112,10 +122,9 @@ const ContactUsForm = () => {
                                                 <span className='font-bold text-lg'>*</span>
                                             </span>
                                         </label>
-                                        <input type='email' name='email' placeholder='Your Email Here' className='input input-bordered w-full bg-transparent border-neutral border-2 font-medium text-neutral placeholder:text-neutral/50' required />
+                                        <input type='email' name='email' placeholder='Your Email Here' className='input input-bordered w-full bg-transparent border-neutral border-2 font-medium text-neutral placeholder:text-neutral/50' />
                                         <label className='label'>
-                                            <span className={`'invisible' label-text-alt text-red-600`}>Email is required</span>
-                                            <span className={`'invisible' label-text-alt text-red-600`}>Invalid Email address</span>
+                                            <span className={`${emailError ? 'visible' : 'invisible'}  label-text-alt text-red-600`}>Email is required</span>
                                         </label>
                                     </div>
                                 </div>
@@ -127,9 +136,9 @@ const ContactUsForm = () => {
                                                 <span className='font-bold text-lg'>*</span>
                                             </span>
                                         </label>
-                                        <input type='text' name='subject' placeholder='Your Email Subject Here' className='input input-bordered w-full bg-transparent border-neutral border-2 font-medium text-neutral placeholder:text-neutral/50' required />
+                                        <input type='text' name='subject' placeholder='Your Email Subject Here' className='input input-bordered w-full bg-transparent border-neutral border-2 font-medium text-neutral placeholder:text-neutral/50' />
                                         <label className='label'>
-                                            <span className={`'invisible' label-text-alt text-red-600`}>Subject is required</span>
+                                            <span className={`${subjectError ? 'visible' : 'invisible'}  label-text-alt text-red-600`}>Subject is required</span>
                                         </label>
                                     </div>
                                 </div>
@@ -141,9 +150,9 @@ const ContactUsForm = () => {
                                                 <span className='font-bold text-lg'>*</span>
                                             </span>
                                         </label>
-                                        <textarea name='message' className='textarea textarea-bordered h-40 bg-transparent border-neutral border-2 font-medium text-neutral placeholder:text-neutral/50' placeholder='Type Your Message Here...' required></textarea>
+                                        <textarea name='message' className='textarea textarea-bordered h-40 bg-transparent border-neutral border-2 font-medium text-neutral placeholder:text-neutral/50' placeholder='Type Your Message Here...'></textarea>
                                         <label className='label'>
-                                            <span className={`'invisible' label-text-alt text-red-600`}>Message is required</span>
+                                            <span className={`${messageError ? 'visible' : 'invisible'}  label-text-alt text-red-600`}>Message is required</span>
                                         </label>
                                     </div>
                                 </div>
