@@ -1,0 +1,44 @@
+[
+    {
+        "_id": "01",
+        "companyName": "Shamsher Jute Mills Ltd.",
+        "companyImageUrl": "",
+        "companyDescription": "Shamsher Jute Mills Ltd. (SJML) is one of the very first private Jute Mills in Bangladesh. It was established by Haji Mohammad Ali in 1978. It has established itself as a brand by maintaining the finest quality of Jute Goods. The highest- grade raw Jute in the world is used to make a comprehensive range of Jute Yarn and Twine that satisfies global standards for both quality and quantity. Products from Shamsher Jute Mills Ltd are utilized in carpet weaving. Wall coverings, Jute Weaving, Fabrics for Shopping Bags, Caps, Handicrafts, and Jute Cloth for a variety of uses, including Canvas, Decorative Fabrics, Laminated Cloth, Heavy Yarn for Cables, Braiding for Handmade Leisure Shoes, Safety Fuse for Explosives, and many more.",
+        "companyMembership": [
+            "Bangladesh Jute Mills Association (BJMA)",
+            "Dhaka Chamber of Commerce & Industry (DCCI)",
+            "Bangladesh Jute Spinners Association (BJSA)",
+            "The Federation of Bangladesh Chambers of Commerce and Industry (FBCCI)",
+            "Metropolitan Chamber of Commerce and Industry, Dhaka (MCCI)"
+        ]
+    },
+    {
+        "_id": "02",
+        "companyName": "Madina Jute Industries Ltd.",
+        "companyImageUrl": "",
+        "companyDescription": "Madina Jute Industries Ltd. (MJIL) is a well established name in Jute Industry for its diversified Jute products. It was established in 2004. It specializes in superior hessian cloth of various widths as well as other nonconventional hessian cloth and bags (colored and bleached) as per the demand and specifications of the clients. They also produce high quality Jute Yarn/Twine, Jute Mesh, Jute Soil Saver, Jute Webbing/Ribbon, Jute Tape etc.",
+        "companyMembership": [
+            "Bangladesh Jute Mills Association (BJMA)",
+            "Dhaka Chamber of Commerce & Industry (DCCI)",
+            "Bangladesh Jute Exporters  Association (BJEA)"
+        ]
+    },
+     {
+        "_id": "03",
+        "companyName": "Haramine Spinning Mills Ltd.",
+        "companyImageUrl": "",
+        "companyDescription": "Haramine Spinning Mills Ltd. (HSML) was incorporated as a private limited company in 18 February 2007 under the relevant Companies Act. The company is engaged in cotton spinning business. The shareholder directors of HSML have sound educational, business, social, financial background and banking networks in Bangladesh. HSML`s operations are managed by experienced people with diverse, professional and functional experience.",
+        "companyMembership": [
+            "Bangladesh Textile Mills Association (BTMA)"
+        ]
+    },
+    {
+        "_id": "04",
+        "companyName": "Shohrab Securities & Trade Ltd.",
+        "companyImageUrl": "",
+        "companyDescription": " Shohrab Securities & Trade Ltd. (SST) is a member of the Dhaka Stock Exchange Ltd. (DSE) and a Full-Service Depositary Participant of the Central Depository Bangladesh Limited (CDBL). It was established in 2005. Shohrab Securities & Trade Ltd. is holding both Stock Broker & Stock Dealer license from Bangladesh Securities and Exchange Commission (BSEC). Shohrab Securities & Trade Ltd.  is committed to establish a concrete business relationship with clients and working together concentrating better customer satisfaction by providing professional services.",
+        "companyMembership": [
+            "DSE Brokers Association of Bangladesh (DBA)"
+        ]
+    }
+]

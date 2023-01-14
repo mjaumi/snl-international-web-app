@@ -1,6 +1,8 @@
 import React, { useEffect } from 'react';
 import PageTitle from '../../components/PageTItle/PageTitle';
 import PageTopBanner from '../../components/PageTopBanner/PageTopBanner';
+import SisterConcernsCards from '../../components/SisterConcernsCards/SisterConcernsCards';
+import SNLQuotes from '../../components/SNLQuotes/SNLQuotes';
 
 const SisterConcerns = () => {
     //scroll to the top on render
@@ -13,6 +15,8 @@ const SisterConcerns = () => {
         <section>
             <PageTitle title={'Our Sister Concerns'} />
             <PageTopBanner bgImage={'bg-banner-2-img'} titleText={'Our Sister Concerns'} />
+            <SisterConcernsCards />
+            <SNLQuotes quote={'anything you ask, we deliver'} />
         </section>
     );
 };
