@@ -125,7 +125,7 @@ const Banner = () => {
             >
                 <SwiperSlide className='bg-banner-1-img bg-no-repeat bg-center bg-cover mix-blend-multiply flex justify-center items-center'>
                     <div className='relative'>
-                        <animated.div className={`absolute w-1 md:w-2 bg-secondary -left-5 md:-left-10 top-0 ${firstSlideBorderScale.hasSwipedToSlide ? 'opacity-100' : 'opacity-0'}`} style={firstSlideBorderScale.leftBorderScaleAnimation}></animated.div>
+                        <animated.div className={`absolute rounded-md w-1 md:w-2 bg-secondary -left-5 md:-left-10 top-0 ${firstSlideBorderScale.hasSwipedToSlide ? 'opacity-100' : 'opacity-0'}`} style={firstSlideBorderScale.leftBorderScaleAnimation}></animated.div>
                         <div className='text-3xl md:text-6xl 2xl:text-8xl text-white uppercase overflow-hidden'>
                             <animated.h1 className={`font-thin mb-4 md:mb-10 tracking-widest ${firstUpperHeaderAnim.hasAnimRestarted ? 'opacity-100' : 'opacity-0'}`} style={firstUpperHeaderAnim.HeaderTextTransformAnimation}>Welcome to</animated.h1>
                             <animated.h1 className={`tracking-wider font-light ${firstLowerHeaderAnim.hasAnimRestarted ? 'opacity-100' : 'opacity-0'}`} style={firstLowerHeaderAnim.HeaderTextTransformAnimation}>SNL International</animated.h1>
@@ -134,7 +134,7 @@ const Banner = () => {
                 </SwiperSlide>
                 <SwiperSlide className='bg-banner-2-img bg-no-repeat bg-center bg-cover mix-blend-multiply flex justify-center items-center'>
                     <div className='relative'>
-                        <animated.div className={`absolute w-1 md:w-2 bg-secondary -left-5 md:-left-10 top-0 ${secondSlideBorderScale.hasSwipedToSlide ? 'opacity-100' : 'opacity-0'}`} style={secondSlideBorderScale.leftBorderScaleAnimation}></animated.div>
+                        <animated.div className={`absolute rounded-md w-1 md:w-2 bg-secondary -left-5 md:-left-10 top-0 ${secondSlideBorderScale.hasSwipedToSlide ? 'opacity-100' : 'opacity-0'}`} style={secondSlideBorderScale.leftBorderScaleAnimation}></animated.div>
                         <div className='text-3xl md:text-6xl 2xl:text-8xl text-white uppercase overflow-hidden'>
                             <animated.h1 className={`font-thin mb-4 md:mb-10 tracking-widest ${secondUpperHeaderAnim.hasAnimRestarted ? 'opacity-100' : 'opacity-0'}`} style={secondUpperHeaderAnim.HeaderTextTransformAnimation}>Welcome to</animated.h1>
                             <animated.h1 className={`tracking-wider font-light ${secondLowerHeaderAnim.hasAnimRestarted ? 'opacity-100' : 'opacity-0'}`} style={secondLowerHeaderAnim.HeaderTextTransformAnimation}>SNL International</animated.h1>
@@ -143,7 +143,7 @@ const Banner = () => {
                 </SwiperSlide>
                 <SwiperSlide className='bg-banner-3-img bg-no-repeat bg-center bg-cover mix-blend-multiply flex justify-center items-center'>
                     <div className='relative'>
-                        <animated.div className={`absolute w-1 md:w-2 bg-secondary -left-5 md:-left-10 top-0 ${thirdSlideBorderScale.hasSwipedToSlide ? 'opacity-100' : 'opacity-0'}`} style={thirdSlideBorderScale.leftBorderScaleAnimation}></animated.div>
+                        <animated.div className={`absolute rounded-md w-1 md:w-2 bg-secondary -left-5 md:-left-10 top-0 ${thirdSlideBorderScale.hasSwipedToSlide ? 'opacity-100' : 'opacity-0'}`} style={thirdSlideBorderScale.leftBorderScaleAnimation}></animated.div>
                         <div className='text-3xl md:text-6xl 2xl:text-8xl text-white uppercase overflow-hidden'>
                             <animated.h1 className={`font-thin mb-4 md:mb-10 tracking-widest ${thirdUpperHeaderAnim.hasAnimRestarted ? 'opacity-100' : 'opacity-0'}`} style={thirdUpperHeaderAnim.HeaderTextTransformAnimation}>Welcome to</animated.h1>
                             <animated.h1 className={`tracking-wider font-light ${thirdLowerHeaderAnim.hasAnimRestarted ? 'opacity-100' : 'opacity-0'}`} style={thirdLowerHeaderAnim.HeaderTextTransformAnimation}>SNL International</animated.h1>

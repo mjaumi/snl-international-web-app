@@ -28,7 +28,7 @@ const PageTopBanner = ({ bgImage, titleText }) => {
                     <div className='flex justify-center'>
                         <div ref={titleRef} className='relative font-bold text-3xl md:text-6xl capitalize flex justify-center w-fit mx-auto'>
                             <h1 className='text-secondary text-center px-4 pb-3'>{titleText}</h1>
-                            <animated.div style={titleAnimation.titleUnderlineAnimation} className='absolute h-1 md:h-2 bg-secondary bottom-0 left-0'></animated.div>
+                            <animated.div style={titleAnimation.titleUnderlineAnimation} className='absolute rounded-md h-1 md:h-2 bg-secondary bottom-0 left-0'></animated.div>
                         </div>
                     </div>
                 </div>
