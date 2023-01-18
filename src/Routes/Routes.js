@@ -3,6 +3,7 @@ import Main from '../Layout/Main';
 import AboutUs from '../pages/AboutUs/AboutUs';
 import ContactUs from '../pages/ContactUs/ContactUs';
 import Home from '../pages/Home/Home';
+import Products from '../pages/Products/Products';
 import SisterConcerns from '../pages/SisterConcerns/SisterConcerns';
 
 
@@ -27,6 +28,18 @@ export const routes = createBrowserRouter([
             {
                 path: '/contact-us',
                 element: <ContactUs />
+            },
+            {
+                path: '/jute-products',
+                element: <Products />
+            },
+            {
+                path: '/diversified-jute-products',
+                element: <Products />
+            },
+            {
+                path: '/more-diversified-jute-products',
+                element: <Products />
             }
         ]
     }

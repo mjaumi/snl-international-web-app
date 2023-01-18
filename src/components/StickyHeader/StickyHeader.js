@@ -1,13 +1,26 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { BiSupport } from 'react-icons/bi';
 import { Link } from 'react-router-dom';
 import SNLButton from '../SNLButton/SNLButton';
 
-const StickyHeader = ({ isHeaderInViewport }) => {
+const StickyHeader = ({ isHeaderInViewport, location }) => {
+    // integration of react hooks here
+    const [showStickyHeader, setShowStickyHeader] = useState(false);
+
+    useEffect(() => {
+        console.log(showStickyHeader, location.pathname);
+        if (location.pathname.includes('product')) {
+
+            setShowStickyHeader(true);
+        } else {
+
+            setShowStickyHeader(false);
+        }
+    }, [isHeaderInViewport, location.pathname, showStickyHeader]);
 
     // rendering sticky header component here
     return (
-        <header className={`w-full bg-accent -mb-[90px] ${isHeaderInViewport ? 'opacity-0 absolute -top-[90px]' : 'sticky top-0'} h-[90px] z-[99999] shadow-snl duration-300`}>
+        <header className={`w-full bg-accent -mb-[90px] ${location.pathname.includes('product') ? 'sticky top-0' : isHeaderInViewport ? 'opacity-0 absolute -top-[90px]' : 'sticky top-0'} h-[90px] z-[99999] shadow-snl duration-300`}>
             <nav className='h-full flex justify-between items-center'>
                 <div className='navbar w-[90%] mx-auto'>
                     <div className='navbar-start w-auto'>
@@ -42,8 +55,8 @@ const StickyHeader = ({ isHeaderInViewport }) => {
                                     <svg className='fill-current' xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24'><path d='M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z' /></svg>
                                 </Link>
                                 <ul className='p-2 bg-base-100 shadow-md text-primary'>
-                                    <li><Link>Jute Products</Link></li>
-                                    <li><Link>Diversified Jute Products</Link></li>
+                                    <li><Link to={'/jute-products'}>Jute Products</Link></li>
+                                    <li><Link to={'/diversified-jute-products'}>Diversified Jute Products</Link></li>
                                 </ul>
                             </li>
                             <li><Link to={'/sister-concerns'}>Our Sister Concerns</Link></li>
