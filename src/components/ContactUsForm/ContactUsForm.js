@@ -28,8 +28,6 @@ const ContactUsForm = () => {
             message: e.target.message.value,
         }
 
-        console.log(Object.values(data).filter(val => val === ''));
-
         setFirstNameError(data.firstName === '' ? true : false);
         setLastNameError(data.lastName === '' ? true : false);
         setEmailError(data.email === '' ? true : false);
@@ -96,7 +94,7 @@ const ContactUsForm = () => {
                                                 <span className='font-bold text-lg'>*</span>
                                             </span>
                                         </label>
-                                        <input type='text' name='firstName' placeholder='Your First Name Here' className='input input-bordered w-full bg-transparent border-neutral border-2 font-medium text-neutral placeholder:text-neutral/50' />
+                                        <input type='text' name='firstName' placeholder='Your First Name Here' className='input input-bordered w-full bg-transparent border-neutral border-2 font-medium text-neutral placeholder:text-neutral/50' autoComplete='off' />
                                         <label className='label'>
                                             <span className={`${firstNameError ? 'visible' : 'invisible'} label-text-alt text-red-600`}>First name is required</span>
                                         </label>
@@ -108,7 +106,7 @@ const ContactUsForm = () => {
                                                 <span className='font-bold text-lg'>*</span>
                                             </span>
                                         </label>
-                                        <input type='text' name='lastName' placeholder='Your Last Name Here' className='input input-bordered w-full bg-transparent border-neutral border-2 font-medium text-neutral placeholder:text-neutral/50' />
+                                        <input type='text' name='lastName' placeholder='Your Last Name Here' className='input input-bordered w-full bg-transparent border-neutral border-2 font-medium text-neutral placeholder:text-neutral/50' autoComplete='off' />
                                         <label className='label'>
                                             <span className={`${lastNameError ? 'visible' : 'invisible'}  label-text-alt text-red-600`}>Last name is required</span>
                                         </label>
@@ -122,7 +120,7 @@ const ContactUsForm = () => {
                                                 <span className='font-bold text-lg'>*</span>
                                             </span>
                                         </label>
-                                        <input type='email' name='email' placeholder='Your Email Here' className='input input-bordered w-full bg-transparent border-neutral border-2 font-medium text-neutral placeholder:text-neutral/50' />
+                                        <input type='email' name='email' placeholder='Your Email Here' className='input input-bordered w-full bg-transparent border-neutral border-2 font-medium text-neutral placeholder:text-neutral/50' autoComplete='off' />
                                         <label className='label'>
                                             <span className={`${emailError ? 'visible' : 'invisible'}  label-text-alt text-red-600`}>Email is required</span>
                                         </label>
@@ -136,7 +134,7 @@ const ContactUsForm = () => {
                                                 <span className='font-bold text-lg'>*</span>
                                             </span>
                                         </label>
-                                        <input type='text' name='subject' placeholder='Your Email Subject Here' className='input input-bordered w-full bg-transparent border-neutral border-2 font-medium text-neutral placeholder:text-neutral/50' />
+                                        <input type='text' name='subject' placeholder='Your Email Subject Here' className='input input-bordered w-full bg-transparent border-neutral border-2 font-medium text-neutral placeholder:text-neutral/50' autoComplete='off' />
                                         <label className='label'>
                                             <span className={`${subjectError ? 'visible' : 'invisible'}  label-text-alt text-red-600`}>Subject is required</span>
                                         </label>
@@ -150,7 +148,7 @@ const ContactUsForm = () => {
                                                 <span className='font-bold text-lg'>*</span>
                                             </span>
                                         </label>
-                                        <textarea name='message' className='textarea textarea-bordered h-40 bg-transparent border-neutral border-2 font-medium text-neutral placeholder:text-neutral/50' placeholder='Type Your Message Here...'></textarea>
+                                        <textarea name='message' className='textarea textarea-bordered h-40 bg-transparent border-neutral border-2 font-medium text-neutral placeholder:text-neutral/50' placeholder='Type Your Message Here...' autoComplete='off'></textarea>
                                         <label className='label'>
                                             <span className={`${messageError ? 'visible' : 'invisible'}  label-text-alt text-red-600`}>Message is required</span>
                                         </label>

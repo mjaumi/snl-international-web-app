@@ -20,6 +20,7 @@ module.exports = {
       },
       gridTemplateRows: {
         'snl-product-card': '1fr 70px 0.6fr 50px',
+        'snl-miscellaneous-product-card': '70px',
       }
     },
   },

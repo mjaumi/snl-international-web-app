@@ -36,10 +36,6 @@ export const routes = createBrowserRouter([
             {
                 path: '/diversified-jute-products',
                 element: <Products />
-            },
-            {
-                path: '/more-diversified-jute-products',
-                element: <Products />
             }
         ]
     }
