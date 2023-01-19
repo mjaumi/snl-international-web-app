@@ -1,26 +1,13 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { BiSupport } from 'react-icons/bi';
 import { Link } from 'react-router-dom';
 import SNLButton from '../SNLButton/SNLButton';
 
-const StickyHeader = ({ isHeaderInViewport, location }) => {
-    // integration of react hooks here
-    const [showStickyHeader, setShowStickyHeader] = useState(false);
-
-    useEffect(() => {
-        console.log(showStickyHeader, location.pathname);
-        if (location.pathname.includes('product')) {
-
-            setShowStickyHeader(true);
-        } else {
-
-            setShowStickyHeader(false);
-        }
-    }, [isHeaderInViewport, location.pathname, showStickyHeader]);
+const StickyHeader = ({ isHeaderInViewport }) => {
 
     // rendering sticky header component here
     return (
-        <header className={`w-full bg-accent -mb-[90px] ${location.pathname.includes('product') ? 'sticky top-0' : isHeaderInViewport ? 'opacity-0 absolute -top-[90px]' : 'sticky top-0'} h-[90px] z-[99999] shadow-snl duration-300`}>
+        <header className={`w-full bg-accent -mb-[90px] ${isHeaderInViewport ? 'opacity-0 absolute -top-[90px]' : 'sticky top-0'} h-[90px] z-[99999] shadow-snl duration-300`}>
             <nav className='h-full flex justify-between items-center'>
                 <div className='navbar w-[90%] mx-auto'>
                     <div className='navbar-start w-auto'>

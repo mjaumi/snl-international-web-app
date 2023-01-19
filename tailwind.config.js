@@ -17,6 +17,9 @@ module.exports = {
       },
       boxShadow: {
         'snl': 'rgba(0, 0, 0, 0.24) 0px 3px 8px',
+      },
+      gridTemplateRows: {
+        'snl-product-card': '1fr 70px 0.6fr 50px',
       }
     },
   },

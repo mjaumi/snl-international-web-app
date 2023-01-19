@@ -18,7 +18,7 @@ const Header = () => {
     // rendering header component here
     return (
         <>
-            <StickyHeader isHeaderInViewport={headerInViewPort.inViewport} location={location} />
+            <StickyHeader isHeaderInViewport={!location.pathname.includes('product') ? headerInViewPort.inViewport : false} />
             {
                 !location.pathname.includes('product') &&
 
