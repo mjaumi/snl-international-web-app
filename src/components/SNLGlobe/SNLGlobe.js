@@ -12,8 +12,8 @@ const SNLGlobe = ({ dimensions, exporterCountries }) => {
     const markerSvg =
         `
             <svg viewBox="-4 0 36 36">
-                <path fill="currentColor" d="M14,0 C21.732,0 28,5.641 28,12.6 C28,23.963 14,36 14,36 C14,36 0,24.064 0,12.6 C0,5.641 6.268,0 14,0 Z"></path>
-                <circle fill="#FAEAB1" cx="14" cy="14" r="7"></circle>
+                <path fill="#285430" d="M14,0 C21.732,0 28,5.641 28,12.6 C28,23.963 14,36 14,36 C14,36 0,24.064 0,12.6 C0,5.641 6.268,0 14,0 Z"></path>
+                <circle fill="#E5D9B6" cx="14" cy="14" r="7"></circle>
             </svg>
         `;
 
@@ -43,7 +43,7 @@ const SNLGlobe = ({ dimensions, exporterCountries }) => {
             height={dimensions.height}
             width={dimensions.width}
             showAtmosphere={true}
-            globeImageUrl='//i.ibb.co/99GJTFG/globe.jpg'
+            globeImageUrl='https://i.ibb.co/jgDJG3d/globe2.jpg'
             backgroundColor={'#FFFFFF'}
             atmosphereColor={'#FAEAB1'}
             animateIn={true}
@@ -67,9 +67,9 @@ const SNLGlobe = ({ dimensions, exporterCountries }) => {
 
             polygonsData={countries.features.filter(d => d.properties.ISO_A2 !== 'AQ')}
             polygonAltitude={d => d === hoverD ? 0.06 : 0.01}
-            polygonCapColor={() => '#FAEAB1'}
-            polygonSideColor={() => '#E5BA73'}
-            polygonStrokeColor={() => '#C58940'}
+            polygonCapColor={() => '#A4BE7B'}
+            polygonSideColor={() => '#5F8D4E'}
+            polygonStrokeColor={() => '#285430'}
             polygonLabel={({ properties: d }) =>
                 `
                     <b style="color:#3A3627">${d.ADMIN} (${d.ISO_A2})</b>

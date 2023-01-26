@@ -20,7 +20,12 @@ const Footer = () => {
                             <h5 className='text-lg font-medium mb-2'>Office Address:</h5>
                             <div className='flex justify-center xl:justify-start'>
                                 <FaMapMarkerAlt className='mr-2 mt-1 hidden xl:block' />
-                                <p className='mb-1 w-[70%]'><FaMapMarkerAlt className='inline mr-2  xl:hidden' /> 3 R. K. Mission Road, Lily Pond Center,Level 22, Motijheel , Dhaka,Bangladesh 1204 Dhaka, Dhaka Division, Bangladesh</p>
+                                <p className='mb-1 w-[70%]'><FaMapMarkerAlt className='inline mr-2  xl:hidden' /> 3 R. K. Mission Road
+                                    <br />
+                                    Lily Pond Center, Level 22
+                                    <br />
+                                    Motijheel, Dhaka-1203, Bangladesh.
+                                </p>
                             </div>
                         </div>
                         <div className='my-4 ml-0 xl:ml-5'>
@@ -43,8 +48,18 @@ const Footer = () => {
                         </div>
                         <div className='my-4 ml-0 xl:ml-5'>
                             <h5 className='text-lg font-medium mb-2'>Mail Us Now:</h5>
-                            <p className='mb-1'><MdEmail className='inline mr-2' /> snljute@gmail.com</p>
-                            <p><MdEmail className='inline mr-2' /> snljute@gmail.com</p>
+                            <p className='mb-1 underline'>
+                                <MdEmail className='inline mr-2' />
+                                <a href='https://mail.google.com/mail/?view=cm&fs=1&to=snljute@gmail.com' target='_blank' rel='noreferrer'>
+                                    snljute@gmail.com
+                                </a>
+                            </p>
+                            <p className='mb-1 underline'>
+                                <MdEmail className='inline mr-2' />
+                                <a href='https://mail.google.com/mail/?view=cm&fs=1&to=snljute@gmail.com' target='_blank' rel='noreferrer'>
+                                    snljute@gmail.com
+                                </a>
+                            </p>
                         </div>
                     </div>
                 </div>

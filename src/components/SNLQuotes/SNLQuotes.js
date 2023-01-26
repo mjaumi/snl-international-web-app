@@ -6,14 +6,14 @@ const SNLQuotes = ({ subQuote, quote }) => {
 
     // rendering SNL quotes component here
     return (
-        <div className='relative h-40 xl:h-80 border-t-4 border-b-4 border-primary'>
+        <div className='relative h-40 md:h-[250px] xl:h-[500px] border-t-4 border-b-4 border-primary'>
             <Parallax strength={500} className='h-full'>
                 <Background className='w-full h-full'>
                     <div className='bg-quotes-img w-screen h-[1000px] bg-no-repeat bg-center bg-cover'>
                     </div>
                 </Background>
             </Parallax>
-            <div className='w-full h-full'>
+            <div className='w-full'>
                 <div className='absolute w-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2'>
                     <div className='flex justify-center text-white'>
                         <div>

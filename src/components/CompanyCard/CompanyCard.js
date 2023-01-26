@@ -8,7 +8,7 @@ const CompanyCard = ({ company }) => {
 
     // rendering company card here
     return (
-        <div className='w-full xl:w-[90%] bg-accent/70 mx-auto my-5 border-2 border-primary rounded-md p-5 shadow-snl'>
+        <div className='w-full xl:w-[90%] mx-auto my-20 p-5'>
             <div className='flex flex-col xl:flex-row'>
                 <div className='mx-auto xl:mx-0 w-[300px] rounded-md overflow-hidden'>
                     <img className='w-full' src={companyImageUrl ? companyImageUrl : image} alt={companyName} />

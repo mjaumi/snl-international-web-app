@@ -13,7 +13,7 @@ const SisterConcernsCards = () => {
     }, []);
 
     return (
-        <section className='w-[95%] md:w-[90%] mx-auto py-10'>
+        <section className='w-[95%] md:w-[90%] mx-auto py-20'>
             {
                 companies.map(c => <CompanyCard
                     key={c._id}

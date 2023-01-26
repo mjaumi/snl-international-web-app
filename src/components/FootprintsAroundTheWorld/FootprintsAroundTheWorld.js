@@ -31,7 +31,7 @@ const FootprintsAroundTheWorld = () => {
             <SectionTitle titleText={'Our Footprints across the globe'} />
             <div className='w-[95%] md:w-[90%] mx-auto flex flex-col-reverse xl:flex-row justify-center items-center'>
                 <div className='w-full xl:w-2/3'>
-                    <h3 className='w-full xl:w-4/5 2xl:w-2/3 text-center xl:text-left text-xl font-semibold'>Throughout the years we have placed our footprints in many countries by exporting quality products.</h3>
+                    <h3 className='w-full xl:w-4/5 2xl:w-2/3 text-center xl:text-left text-lg font-semibold'>Throughout the years we have placed our footprints in many countries by exporting quality products.</h3>
                     <div className='w-4/5 mx-auto md:mx-0 2xl:mx-0 2xl:w-2/3 grid grid-cols-1 md:grid-cols-2 mt-10'>
                         <div>
                             {
