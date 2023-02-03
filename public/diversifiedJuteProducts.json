@@ -3,13 +3,13 @@
         "_id": 2001,
         "productName": "Food Grade Yarn (VOT)",
         "productImageUrl": "",
-        "productDescription": "It is produced with 100% edible Soya Bean Oil instead of regular JBO oil (Jute Batching Oil); a petrochemical by product. This type of Yarn is odorless and suitable for producing fabrics and bag for human consumable products like packing coffee, nuts, grains etc."
+        "productDescription": "It is produced with 100% edible Soya Bean Oil instead of regular JBO oil (Jute Batching Oil); a petrochemical by product. This type of Yarn is odorless and suitable for producing fabrics and bags for human consumable products like packing coffee, nuts, grains etc."
     },
     {
         "_id": 2002,
         "productName": "PVA Coated Jute Yarn",
         "productImageUrl": "",
-        "productDescription": "It is one of the most popular diversified products of us. This type of yarn is PVA coated so it has no hairiness. PVA coated jute yarn is more lustrous and it’s basically used for decoration purpose."
+        "productDescription": "It is one of the most popular diversified products of us. This type of Jute yarn is PVA coated. So it has no hairiness. PVA coated Jute yarn is more lustrous and it’s basically used for decoration purpose."
     },
     {
         "_id": 2003,
@@ -63,6 +63,6 @@
         "_id": 2011,
         "productName": "Colored Jute Hessian",
         "productImageUrl": "",
-        "productDescription": "Our classic jute hessian available in different range. The hessian is constructed in the same way as our natural option, then solid dyed to produce great colors to choose from. The Wide range of practical uses varies from construction jobs supporting brickwork to use in schools, colleges and sports centers. Banners, tents, barriers, theatre backdrops notice boards and creative projects all benefit from this hard-working versatile fabric."
+        "productDescription": "Our classic Jute hessian available in different range. The hessian is constructed in the same way as our natural option, then solid dyed to produce great colors to choose from. The Wide range of practical uses varies from construction jobs supporting brickwork to use in schools, colleges and sports centers. Banners, tents, barriers, theatre backdrops notice boards and creative projects all benefit from this hard-working versatile fabric."
     }
 ]

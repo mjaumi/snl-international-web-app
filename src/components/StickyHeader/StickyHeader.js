@@ -50,7 +50,7 @@ const StickyHeader = ({ isHeaderInViewport }) => {
                             <li><Link>Blogs</Link></li>
                         </ul>
                         <Link to={'/contact-us'}>
-                            <SNLButton btnType='submit' icon={<BiSupport className='z-50 h-6 w-6 mr-2' />} content='contact us' additionalClassNames={'px-6 btn-neutral text-neutral after:bg-neutral'} />
+                            <SNLButton btnType='submit' icon={<BiSupport className='z-50 h-6 w-6 mr-2' />} content='contact us' additionalClassNames={'px-6 btn-neutral text-neutral after:bg-neutral text-sm md:text-lg'} />
                         </Link>
                     </div>
                 </div>

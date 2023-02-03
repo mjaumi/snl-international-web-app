@@ -14,6 +14,7 @@ module.exports = {
       fontFamily: {
         'poppins': ["'Poppins'", 'sans-serif'],
         'dancing-script': ["'Dancing Script'", 'cursive'],
+        'solitreo': ["'Solitreo'", 'cursive'],
       },
       boxShadow: {
         'snl': 'rgba(0, 0, 0, 0.24) 0px 3px 8px',
@@ -21,10 +22,16 @@ module.exports = {
       gridTemplateRows: {
         'snl-product-card': '1fr 70px 0.6fr 50px',
         'snl-miscellaneous-product-card': '70px',
-      }
+      },
+      clipPath: {
+        'snl-polygon': 'polygon(0 -20%, 100% -20%, 100% 85%, 0 85%)',
+      },
     },
   },
-  plugins: [require('daisyui')],
+  plugins: [
+    require('daisyui'),
+    require('tailwind-clip-path'),
+  ],
   daisyui: {
     themes: [
       {

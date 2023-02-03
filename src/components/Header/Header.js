@@ -65,7 +65,7 @@ const Header = () => {
                                     <li><Link>Blogs</Link></li>
                                 </ul>
                                 <Link to={'/contact-us'}>
-                                    <SNLButton btnType='submit' icon={<BiSupport className='z-50 h-6 w-6 mr-2' />} content='contact us' additionalClassNames={'px-6 btn-secondary text-secondary after:bg-secondary'} />
+                                    <SNLButton btnType='submit' icon={<BiSupport className='z-50 h-6 w-6 mr-2' />} content='contact us' additionalClassNames={'px-6 btn-secondary text-secondary after:bg-secondary text-sm md:text-lg'} />
                                 </Link>
                             </div>
                         </div>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaLeaf } from 'react-icons/fa';
+import { TiPointOfInterest } from 'react-icons/ti';
 import image from '../../assets/images/image_167901185-min.JPG';
 
 const CompanyCard = ({ company }) => {
@@ -28,7 +28,7 @@ const CompanyCard = ({ company }) => {
                             {
                                 companyMembership.map((m, index) => <div key={index} className='font-medium mb-1'>
                                     <p className='text-center xl:text-left'>
-                                        <FaLeaf className='inline mr-2 h-5 w-5' />
+                                        <TiPointOfInterest className='inline mr-2 h-5 w-5' />
                                         {m}
                                     </p>
                                 </div>)

@@ -3,6 +3,7 @@ import { BsTelephoneFill, BsClockFill, BsInstagram } from 'react-icons/bs';
 import { MdEmail } from 'react-icons/md';
 import { FaMapMarkerAlt, FaFacebookF } from 'react-icons/fa';
 import { AiOutlineCopyrightCircle } from 'react-icons/ai';
+import { SiWhatsapp } from 'react-icons/si';
 
 const Footer = () => {
 
@@ -42,8 +43,8 @@ const Footer = () => {
                         <h5 className='text-xl font-semibold'>Contact Information:</h5>
                         <div className='my-4 ml-0 xl:ml-5'>
                             <h5 className='text-lg font-medium mb-2'>Call Us Today:</h5>
-                            <p className='mb-1'><BsTelephoneFill className='inline mr-2' /> +8801788744803 (Hotline)</p>
-                            <p className='mb-1'><BsTelephoneFill className='inline mr-2' /> +8801788744803 (Queries)</p>
+                            <p className='mb-1'><BsTelephoneFill className='inline mr-2' /> (+8802)47110171 (Hotline)</p>
+                            <p className='mb-1'><BsTelephoneFill className='inline mr-2' /> (+8802)47120573 (Queries)</p>
                             <p><BsTelephoneFill className='inline mr-2' /> +8801788744803 (Toll Free)</p>
                         </div>
                         <div className='my-4 ml-0 xl:ml-5'>
@@ -57,7 +58,7 @@ const Footer = () => {
                             <p className='mb-1 underline'>
                                 <MdEmail className='inline mr-2' />
                                 <a href='https://mail.google.com/mail/?view=cm&fs=1&to=snljute@gmail.com' target='_blank' rel='noreferrer'>
-                                    snljute@gmail.com
+                                    jutetex@gmail.com
                                 </a>
                             </p>
                         </div>
@@ -72,8 +73,15 @@ const Footer = () => {
                         <h5 className='text-xl font-semibold'>Follow Us On Social Media:</h5>
                         <div className='my-4 ml-0 xl:ml-5'>
                             <div className='flex justify-center xl:justify-start'>
-                                <a href='https://www.facebook.com/profile.php?id=100087734663658' className='bg-neutral h-10 w-10 flex items-center justify-center rounded-md mr-4 hover:scale-125 duration-300' target='_blank' rel='noreferrer'><FaFacebookF className='text-accent h-5 w-5' /></a>
-                                <a href='https://instagram.com/snl_bangladesh?igshid=YmMyMTA2M2Y=' className='bg-neutral h-10 w-10 flex items-center justify-center rounded-md hover:scale-125 duration-300' target='_blank' rel='noreferrer'><BsInstagram className='text-accent h-5 w-5' /></a>
+                                <a href='https://www.facebook.com/profile.php?id=100087734663658' className='bg-neutral h-10 w-10 flex items-center justify-center rounded-md mr-4 hover:scale-125 duration-300' target='_blank' rel='noreferrer'>
+                                    <FaFacebookF className='text-accent h-5 w-5' />
+                                </a>
+                                <a href='https://instagram.com/snl_bangladesh?igshid=YmMyMTA2M2Y=' className='bg-neutral h-10 w-10 flex items-center justify-center rounded-md mr-4 hover:scale-125 duration-300' target='_blank' rel='noreferrer'>
+                                    <BsInstagram className='text-accent h-5 w-5' />
+                                </a>
+                                <a href='https://instagram.com/snl_bangladesh?igshid=YmMyMTA2M2Y=' className='bg-neutral h-10 w-10 flex items-center justify-center rounded-md hover:scale-125 duration-300' target='_blank' rel='noreferrer'>
+                                    <SiWhatsapp className='text-accent h-5 w-5' />
+                                </a>
                             </div>
                         </div>
                     </div>

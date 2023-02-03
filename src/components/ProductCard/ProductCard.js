@@ -26,7 +26,7 @@ const ProductCard = ({ product }) => {
                 <p className='text-center text-sm'>{product.productDescription}</p>
             </div>
             <div>
-                <SNLButton onClick={() => handleNavigateToContactPage()} content={'Contact Us to Learn More'} icon={<BiSupport className='z-50 h-6 w-6 mr-2' />} additionalClassNames={'w-full btn-neutral text-neutral after:bg-neutral'} />
+                <SNLButton onClick={() => handleNavigateToContactPage()} content={'Contact Us to Learn More'} icon={<BiSupport className='z-50 h-6 w-6 mr-2' />} additionalClassNames={'w-full btn-neutral text-neutral after:bg-neutral text-sm md:text-lg'} />
             </div>
         </div>
     );
