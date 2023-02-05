@@ -80,7 +80,6 @@ const ContactUsForm = () => {
                                     <h5 className='text-lg font-medium mb-2'>Call Us Today:</h5>
                                     <p className='mb-1'><BsTelephoneFill className='inline mr-2' /> (+8802)47110171 (Hotline)</p>
                                     <p className='mb-1'><BsTelephoneFill className='inline mr-2' /> (+8802)47120573 (Queries)</p>
-                                    <p><BsTelephoneFill className='inline mr-2' /> +8801788744803 (Toll Free)</p>
                                 </div>
                                 <div className='my-4'>
                                     <h5 className='text-lg font-medium mb-2'>Mail Us Now:</h5>
@@ -92,7 +91,7 @@ const ContactUsForm = () => {
                                     </p>
                                     <p className='mb-1 underline'>
                                         <MdEmail className='inline mr-2' />
-                                        <a href='https://mail.google.com/mail/?view=cm&fs=1&to=snljute@gmail.com' target='_blank' rel='noreferrer'>
+                                        <a href='https://mail.google.com/mail/?view=cm&fs=1&to=jutetex@gmail.com' target='_blank' rel='noreferrer'>
                                             jutetex@gmail.com
                                         </a>
                                     </p>

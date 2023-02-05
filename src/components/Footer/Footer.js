@@ -45,7 +45,6 @@ const Footer = () => {
                             <h5 className='text-lg font-medium mb-2'>Call Us Today:</h5>
                             <p className='mb-1'><BsTelephoneFill className='inline mr-2' /> (+8802)47110171 (Hotline)</p>
                             <p className='mb-1'><BsTelephoneFill className='inline mr-2' /> (+8802)47120573 (Queries)</p>
-                            <p><BsTelephoneFill className='inline mr-2' /> +8801788744803 (Toll Free)</p>
                         </div>
                         <div className='my-4 ml-0 xl:ml-5'>
                             <h5 className='text-lg font-medium mb-2'>Mail Us Now:</h5>
@@ -57,7 +56,7 @@ const Footer = () => {
                             </p>
                             <p className='mb-1 underline'>
                                 <MdEmail className='inline mr-2' />
-                                <a href='https://mail.google.com/mail/?view=cm&fs=1&to=snljute@gmail.com' target='_blank' rel='noreferrer'>
+                                <a href='https://mail.google.com/mail/?view=cm&fs=1&to=jutetex@gmail.com' target='_blank' rel='noreferrer'>
                                     jutetex@gmail.com
                                 </a>
                             </p>
@@ -79,7 +78,7 @@ const Footer = () => {
                                 <a href='https://instagram.com/snl_bangladesh?igshid=YmMyMTA2M2Y=' className='bg-neutral h-10 w-10 flex items-center justify-center rounded-md mr-4 hover:scale-125 duration-300' target='_blank' rel='noreferrer'>
                                     <BsInstagram className='text-accent h-5 w-5' />
                                 </a>
-                                <a href='https://instagram.com/snl_bangladesh?igshid=YmMyMTA2M2Y=' className='bg-neutral h-10 w-10 flex items-center justify-center rounded-md hover:scale-125 duration-300' target='_blank' rel='noreferrer'>
+                                <a href='https://Wa.me/8801713488672' className='bg-neutral h-10 w-10 flex items-center justify-center rounded-md hover:scale-125 duration-300' target='_blank' rel='noreferrer'>
                                     <SiWhatsapp className='text-accent h-5 w-5' />
                                 </a>
                             </div>
