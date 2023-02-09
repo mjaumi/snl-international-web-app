@@ -44,7 +44,7 @@
     {
         "_id": 2008,
         "productName": "Coffee Bags",
-        "productImageUrl": "",
+        "productImageUrl": "https://i.ibb.co/pZ1LLxV/coffee-bag.jpg",
         "productDescription": "Coffee beans are packed in Jute bag as it is environment friendly and also by customizing the brand logo in it you can promote your brand name."
     },
     {
@@ -62,7 +62,7 @@
     {
         "_id": 2011,
         "productName": "Colored Jute Hessian",
-        "productImageUrl": "https://i.ibb.co/n0GS9BK/colored-jute-hessian-fabric.jpg",
+        "productImageUrl": "https://i.ibb.co/RyHfytm/colored-jute-hessian-fabric.jpg",
         "productDescription": "Our classic Jute hessian available in different range. The hessian is constructed in the same way as our natural option, then solid dyed to produce great colors to choose from. The Wide range of practical uses varies from construction jobs supporting brickwork to use in schools, colleges and sports centers. Banners, tents, barriers, theatre backdrops notice boards and creative projects all benefit from this hard-working versatile fabric."
     }
 ]

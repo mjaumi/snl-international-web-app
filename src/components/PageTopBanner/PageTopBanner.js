@@ -14,7 +14,7 @@ const PageTopBanner = ({ bgImage, titleText }) => {
     const text = SplitType.create('#title');
 
     text.chars.map((item) =>
-        item.classList.add('translate-y-full')
+        item.classList.add('translate-y-[110%]')
     )
 
     // animating the title text

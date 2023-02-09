@@ -1,6 +1,7 @@
 import { createBrowserRouter } from 'react-router-dom'
 import Main from '../Layout/Main';
 import AboutUs from '../pages/AboutUs/AboutUs';
+import Blogs from '../pages/Blogs/Blogs';
 import ContactUs from '../pages/ContactUs/ContactUs';
 import Home from '../pages/Home/Home';
 import Products from '../pages/Products/Products';
@@ -36,6 +37,10 @@ export const routes = createBrowserRouter([
             {
                 path: '/diversified-jute-products',
                 element: <Products />
+            },
+            {
+                path: '/blogs',
+                element: <Blogs />
             }
         ]
     }

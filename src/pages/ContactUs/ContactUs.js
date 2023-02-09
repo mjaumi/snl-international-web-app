@@ -14,7 +14,7 @@ const ContactUs = () => {
     return (
         <section>
             <PageTitle title={'Contact Us'} />
-            <PageTopBanner bgImage={'bg-banner-2-img'} titleText={'Get In Touch With Us'} />
+            <PageTopBanner bgImage={'bg-banner-3-img'} titleText={'Get In Touch With Us'} />
             <ContactUsForm />
             <SNLQuotes subQuote={'We believe in,'} quote={'Leaving a better world for future'} />
         </section>
