@@ -2,6 +2,7 @@ import React from 'react';
 import { BiSupport } from 'react-icons/bi';
 import { Link } from 'react-router-dom';
 import SNLButton from '../SNLButton/SNLButton';
+import logo from '../../assets/images/snl-logo.png';
 
 const StickyHeader = ({ isHeaderInViewport }) => {
 
@@ -42,7 +43,9 @@ const StickyHeader = ({ isHeaderInViewport }) => {
                                 </ul>
                             </div>
                         </div>
-                        <Link to={'/'} className='btn btn-ghost normal-case text-xl'>SNL International</Link>
+                        <Link to={'/'} className='btn btn-ghost normal-case text-xl'>
+                            <img className='h-full w-full' src={logo} alt='logo' />
+                        </Link>
                     </div>
                     <div className='navbar-end hidden lg:w-full lg:flex justify-end'>
                         <ul className='menu menu-horizontal px-1 text-neutral font-medium'>

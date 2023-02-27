@@ -4,6 +4,7 @@ import { Link, useLocation } from 'react-router-dom';
 import SNLButton from '../SNLButton/SNLButton';
 import StickyHeader from '../StickyHeader/StickyHeader';
 import { BiSupport } from 'react-icons/bi';
+import logo from '../../assets/images/snl-logo.png';
 
 const Header = () => {
     // integration of react hooks here
@@ -57,7 +58,9 @@ const Header = () => {
                                         </ul>
                                     </div>
                                 </div>
-                                <Link to={'/'} className='btn btn-ghost normal-case text-xl'>SNL International</Link>
+                                <Link to={'/'} className='btn btn-ghost normal-case text-xl'>
+                                    <img className='h-full w-full' src={logo} alt='logo' />
+                                </Link>
                             </div>
                             <div className='navbar-end hidden lg:w-full lg:flex justify-end'>
                                 <ul className='menu menu-horizontal px-1 text-white font-medium'>

@@ -4,6 +4,7 @@ import { MdEmail } from 'react-icons/md';
 import { FaMapMarkerAlt, FaFacebookF } from 'react-icons/fa';
 import { AiOutlineCopyrightCircle } from 'react-icons/ai';
 import { SiWhatsapp } from 'react-icons/si';
+import logo from '../../assets/images/snl-logo.png';
 
 const Footer = () => {
 
@@ -11,8 +12,13 @@ const Footer = () => {
     return (
         <footer className='bg-accent'>
             <div className='w=[95%] xl:w-[90%] mx-auto grid grid-cols-1 xl:grid-cols-4 py-10'>
-                <div className='flex items-center justify-center xl:justify-start'>
-                    <h3 className='text-4xl font-semibold'>SNL International</h3>
+                <div>
+                    <div className='flex justify-center xl:justify-start w-full xl:h-1/3 xl:w-2/3'>
+                        <img className='xl:h-full xl:w-full w-2/3 md:w-2/5 lg:w-1/5' src={logo} alt='logo' />
+                    </div>
+                    <div className='flex flex-col items-center'>
+                        <p className='mt-5 text-sm text-center xl:text-left px-5 md:w-2/3 lg:w-full xl:px-0 xl:pr-10'>This is a trademark authorized website of SNL International, Bangladesh. Any kind of copyright infringement will cause taking legal actions against the person or group of persons.</p>
+                    </div>
                 </div>
                 <div className='flex justify-center mt-5 xl:mt-0'>
                     <div className='text-center xl:text-left'>
