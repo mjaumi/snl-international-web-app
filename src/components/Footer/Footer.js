@@ -72,12 +72,12 @@ const Footer = () => {
                     </div>
                 </div>
                 <div className='flex justify-center'>
-                    <div>
-                        <h5 className='text-xl font-semibold'>Find Us On Google Maps:</h5>
-                        <div className='my-4 ml-0 xl:ml-5 border-2 border-primary h-32 w-full'>
-                            <span>Google maps instance here</span>
+                    <div className='text-center xl:text-left'>
+                        <h5 className='text-xl font-semibold'>Find us on Google Maps:</h5>
+                        <div className='my-4 ml-0 xl:ml-5 border-primary h-[200px] w-full'>
+                            <iframe title='google map location' src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3652.7248450482984!2d90.4189191760008!3d23.721518089883315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b851fa34fe41%3A0xfb72a0638ff9ca2f!2sLilypond%20Center!5e0!3m2!1sen!2sbd!4v1683131219839!5m2!1sen!2sbd' width='300' height='200' style={{ border: 0 }} allowFullScreen='' loading='lazy' referrerPolicy='no-referrer-when-downgrade'></iframe>
                         </div>
-                        <h5 className='text-xl font-semibold'>Follow Us On Social Media:</h5>
+                        <h5 className='text-xl font-semibold'>Follow us on Social Media:</h5>
                         <div className='my-4 ml-0 xl:ml-5'>
                             <div className='flex justify-center xl:justify-start'>
                                 <a href='https://www.facebook.com/profile.php?id=100087734663658' className='h-10 w-10 flex items-center justify-center mr-4 hover:scale-125 duration-300' target='_blank' rel='noreferrer'>
