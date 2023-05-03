@@ -1,10 +1,12 @@
 import React from 'react';
-import { BsTelephoneFill, BsClockFill, BsInstagram } from 'react-icons/bs';
+import { BsTelephoneFill, BsClockFill } from 'react-icons/bs';
 import { MdEmail } from 'react-icons/md';
-import { FaMapMarkerAlt, FaFacebookF } from 'react-icons/fa';
+import { FaMapMarkerAlt } from 'react-icons/fa';
 import { AiOutlineCopyrightCircle } from 'react-icons/ai';
-import { SiWhatsapp } from 'react-icons/si';
 import logo from '../../assets/images/snl-logo.png';
+import facebookIcon from '../../assets/images/facebook.svg';
+import instagramIcon from '../../assets/images/instagram.svg';
+import whatsappIcon from '../../assets/images/whatsapp.svg';
 
 const Footer = () => {
 
@@ -13,7 +15,7 @@ const Footer = () => {
         <footer className='bg-accent'>
             <div className='w=[95%] xl:w-[90%] mx-auto grid grid-cols-1 xl:grid-cols-4 py-10'>
                 <div>
-                    <div className='flex justify-center xl:justify-start w-full xl:h-1/3 xl:w-2/3'>
+                    <div className='flex justify-center xl:justify-start w-full xl:h-[30%] xl:w-[60%]'>
                         <img className='xl:h-full xl:w-full w-2/3 md:w-2/5 lg:w-1/5' src={logo} alt='logo' />
                     </div>
                     <div className='flex flex-col items-center'>
@@ -49,8 +51,8 @@ const Footer = () => {
                         <h5 className='text-xl font-semibold'>Contact Information:</h5>
                         <div className='my-4 ml-0 xl:ml-5'>
                             <h5 className='text-lg font-medium mb-2'>Call Us Today:</h5>
-                            <p className='mb-1'><BsTelephoneFill className='inline mr-2' /> (+8802)47110171 (Hotline)</p>
-                            <p className='mb-1'><BsTelephoneFill className='inline mr-2' /> (+8802)47120573 (Queries)</p>
+                            <p className='mb-1'><BsTelephoneFill className='inline mr-2' /> (+8802) 47110171</p>
+                            <p className='mb-1'><BsTelephoneFill className='inline mr-2' /> (+8802) 47120573</p>
                         </div>
                         <div className='my-4 ml-0 xl:ml-5'>
                             <h5 className='text-lg font-medium mb-2'>Mail Us Now:</h5>
@@ -78,14 +80,14 @@ const Footer = () => {
                         <h5 className='text-xl font-semibold'>Follow Us On Social Media:</h5>
                         <div className='my-4 ml-0 xl:ml-5'>
                             <div className='flex justify-center xl:justify-start'>
-                                <a href='https://www.facebook.com/profile.php?id=100087734663658' className='bg-neutral h-10 w-10 flex items-center justify-center rounded-md mr-4 hover:scale-125 duration-300' target='_blank' rel='noreferrer'>
-                                    <FaFacebookF className='text-accent h-5 w-5' />
+                                <a href='https://www.facebook.com/profile.php?id=100087734663658' className='h-10 w-10 flex items-center justify-center mr-4 hover:scale-125 duration-300' target='_blank' rel='noreferrer'>
+                                    <img src={facebookIcon} alt='facebook' />
                                 </a>
-                                <a href='https://instagram.com/snl_bangladesh?igshid=YmMyMTA2M2Y=' className='bg-neutral h-10 w-10 flex items-center justify-center rounded-md mr-4 hover:scale-125 duration-300' target='_blank' rel='noreferrer'>
-                                    <BsInstagram className='text-accent h-5 w-5' />
+                                <a href='https://instagram.com/snl_bangladesh?igshid=YmMyMTA2M2Y=' className='h-10 w-10 flex items-center justify-center mr-4 hover:scale-125 duration-300' target='_blank' rel='noreferrer'>
+                                    <img src={instagramIcon} alt='instagram' />
                                 </a>
-                                <a href='https://Wa.me/8801713488672' className='bg-neutral h-10 w-10 flex items-center justify-center rounded-md hover:scale-125 duration-300' target='_blank' rel='noreferrer'>
-                                    <SiWhatsapp className='text-accent h-5 w-5' />
+                                <a href='https://Wa.me/8801713488672' className='h-10 w-10 flex items-center justify-center hover:scale-125 duration-300' target='_blank' rel='noreferrer'>
+                                    <img src={whatsappIcon} alt='whats app' />
                                 </a>
                             </div>
                         </div>

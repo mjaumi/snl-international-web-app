@@ -28,7 +28,7 @@ const FootprintsAroundTheWorld = () => {
     // rendering foot prints around the world component here
     return (
         <section className='bg-white py-10'>
-            <SectionTitle titleText={'Our Footprints across the globe'} />
+            <SectionTitle titleText={'Our Footprints Across the Globe'} />
             <div className='w-[95%] md:w-[90%] mx-auto flex flex-col-reverse xl:flex-row justify-center items-center'>
                 <div className='w-full xl:w-2/3'>
                     <h3 className='w-full xl:w-4/5 2xl:w-2/3 text-center xl:text-left text-lg font-semibold'>Throughout the years we have placed our footprints in many countries by exporting quality products.</h3>

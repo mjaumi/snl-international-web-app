@@ -1,7 +1,7 @@
 import React from 'react';
 import SectionTitle from '../SectionTitle/SectionTitle';
-import aboutImage1 from '../../assets/images/about-1.jpg';
-import aboutImage2 from '../../assets/images/about-2.jpg';
+import aboutImage1 from '../../assets/images/about-image.JPG';
+import aboutImage2 from '../../assets/images/about-image.JPG';
 import SectionImageDiv from '../SectionImageDiv/SectionImageDiv';
 
 const AboutSNL = () => {

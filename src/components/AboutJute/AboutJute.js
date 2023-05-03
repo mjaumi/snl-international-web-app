@@ -9,7 +9,7 @@ const AboutJute = () => {
     // rendering about jute component here
     return (
         <section className='w-[95%] md:w-[90%] mx-auto py-20'>
-            <SectionTitle titleText={'What is jute ?'} />
+            <SectionTitle titleText={'What is Jute ?'} />
             <div className='flex flex-col xl:flex-row'>
                 <div className='w-full xl:w-1/2 h-[40vh] xl:h-[60vh] flex justify-center mt-10'>
                     <SectionImageDiv image1={aboutImage1} image2={aboutImage2} />
