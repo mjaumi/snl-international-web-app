@@ -78,8 +78,8 @@ const ContactUsForm = () => {
                                 </div>
                                 <div className='my-4'>
                                     <h5 className='text-lg font-medium mb-2'>Call Us Today:</h5>
-                                    <p className='mb-1'><BsTelephoneFill className='inline mr-2' /> (+8802)47110171 (Hotline)</p>
-                                    <p className='mb-1'><BsTelephoneFill className='inline mr-2' /> (+8802)47120573 (Queries)</p>
+                                    <p className='mb-1'><BsTelephoneFill className='inline mr-2' /> (+8802) 47110171</p>
+                                    <p className='mb-1'><BsTelephoneFill className='inline mr-2' /> (+8802) 47120573</p>
                                 </div>
                                 <div className='my-4'>
                                     <h5 className='text-lg font-medium mb-2'>Mail Us Now:</h5>

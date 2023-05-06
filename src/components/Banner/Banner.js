@@ -135,9 +135,9 @@ const Banner = () => {
                 <SwiperSlide className='bg-banner-2-img bg-no-repeat bg-center bg-cover mix-blend-multiply flex justify-center items-center'>
                     <div className='relative'>
                         <animated.div className={`absolute rounded-md w-1 md:w-2 bg-secondary -left-5 md:-left-10 top-0 ${secondSlideBorderScale.hasSwipedToSlide ? 'opacity-100' : 'opacity-0'}`} style={secondSlideBorderScale.leftBorderScaleAnimation}></animated.div>
-                        <div className='text-3xl md:text-6xl 2xl:text-8xl text-white uppercase overflow-hidden'>
-                            <animated.h1 className={`font-thin mb-4 md:mb-10 tracking-widest ${secondUpperHeaderAnim.hasAnimRestarted ? 'opacity-100' : 'opacity-0'}`} style={secondUpperHeaderAnim.HeaderTextTransformAnimation}>Welcome to</animated.h1>
-                            <animated.h1 className={`tracking-wider font-light ${secondLowerHeaderAnim.hasAnimRestarted ? 'opacity-100' : 'opacity-0'}`} style={secondLowerHeaderAnim.HeaderTextTransformAnimation}>SNL International</animated.h1>
+                        <div className='text-2xl md:text-5xl 2xl:text-7xl text-white uppercase overflow-hidden'>
+                            <animated.h1 className={`font-thin mb-4 md:mb-10 tracking-widest ${secondUpperHeaderAnim.hasAnimRestarted ? 'opacity-100' : 'opacity-0'}`} style={secondUpperHeaderAnim.HeaderTextTransformAnimation}>We Believe</animated.h1>
+                            <animated.h1 className={`tracking-wider font-light ${secondLowerHeaderAnim.hasAnimRestarted ? 'opacity-100' : 'opacity-0'}`} style={secondLowerHeaderAnim.HeaderTextTransformAnimation}>“Leaving a better world <br /> for future”</animated.h1>
                         </div>
                     </div>
                 </SwiperSlide>
