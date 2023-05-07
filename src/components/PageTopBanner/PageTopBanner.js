@@ -15,15 +15,17 @@ const PageTopBanner = ({ bgImage, titleText }) => {
 
     text.chars.map((item) =>
         item.classList.add('translate-y-[110%]')
-    )
+    );
 
-    // animating the title text
-    gsap.to('.char', {
-        y: 0,
-        stagger: 0.05,
-        delay: 0.02,
-        duration: 0.5
-    })
+    // animating the title text here
+    if (text.chars[0]?.classList.contains('char')) {
+        gsap.to('.char', {
+            y: 0,
+            stagger: 0.05,
+            delay: 0.02,
+            duration: 0.5,
+        });
+    }
 
     // rendering top page banner component here
     return (

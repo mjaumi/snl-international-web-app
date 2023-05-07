@@ -37,7 +37,7 @@ const StickyHeader = ({ isHeaderInViewport }) => {
                                     <li><Link to={'/blogs'}>Blogs</Link></li>
                                     <li>
                                         <Link to={'/contact-us'}>
-                                            <SNLButton btnType='submit' icon={<BiSupport className='z-50 h-6 w-6 mr-2' />} content='contact us' additionalClassNames={'px-6 btn-neutral text-neutral after:bg-neutral text-sm md:text-lg'} />
+                                            <SNLButton icon={<BiSupport className='z-50 w-4 h-4 2xl:h-6 2xl:w-6 mr-2' />} content='Contact us' additionalClassNames={'px-6 btn-neutral text-neutral after:bg-neutral text-sm 2xl:text-lg'} />
                                         </Link>
                                     </li>
                                 </ul>
@@ -68,7 +68,7 @@ const StickyHeader = ({ isHeaderInViewport }) => {
                             <li><Link to={'/blogs'}>Blogs</Link></li>
                         </ul>
                         <Link to={'/contact-us'}>
-                            <SNLButton btnType='submit' icon={<BiSupport className='z-50 h-6 w-6 mr-2' />} content='contact us' additionalClassNames={'px-6 btn-neutral text-neutral after:bg-neutral text-sm md:text-lg'} />
+                            <SNLButton icon={<BiSupport className='z-50 h-6 w-6 mr-2' />} content='Contact us' additionalClassNames={'px-6 btn-neutral text-neutral after:bg-neutral text-sm md:text-lg'} />
                         </Link>
                     </div>
                 </div>

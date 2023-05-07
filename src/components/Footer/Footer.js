@@ -50,12 +50,12 @@ const Footer = () => {
                     <div className='text-center xl:text-left'>
                         <h5 className='text-xl font-semibold'>Contact Information:</h5>
                         <div className='my-4 ml-0 xl:ml-5'>
-                            <h5 className='text-lg font-medium mb-2'>Call Us Today:</h5>
+                            <h5 className='text-lg font-medium mb-2'>Call us today:</h5>
                             <p className='mb-1'><BsTelephoneFill className='inline mr-2' /> (+8802) 47110171</p>
                             <p className='mb-1'><BsTelephoneFill className='inline mr-2' /> (+8802) 47120573</p>
                         </div>
                         <div className='my-4 ml-0 xl:ml-5'>
-                            <h5 className='text-lg font-medium mb-2'>Mail Us Now:</h5>
+                            <h5 className='text-lg font-medium mb-2'>Mail us now:</h5>
                             <p className='mb-1 underline'>
                                 <MdEmail className='inline mr-2' />
                                 <a href='https://mail.google.com/mail/?view=cm&fs=1&to=snljute@gmail.com' target='_blank' rel='noreferrer'>
