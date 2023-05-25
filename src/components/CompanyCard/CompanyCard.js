@@ -1,6 +1,5 @@
 import React from 'react';
 import { TiPointOfInterest } from 'react-icons/ti';
-import image from '../../assets/images/image_167901185-min.JPG';
 
 const CompanyCard = ({ company }) => {
     // destructuring the company data here
@@ -11,7 +10,7 @@ const CompanyCard = ({ company }) => {
         <div className='w-full xl:w-[90%] mx-auto my-20 p-5'>
             <div className='flex flex-col xl:flex-row'>
                 <div className='mx-auto xl:mx-0 w-[300px] rounded-md overflow-hidden'>
-                    <img className='w-full' src={companyImageUrl ? companyImageUrl : image} alt={companyName} />
+                    <img className='w-full' src={companyImageUrl} alt={companyName} />
                 </div>
                 <div className='xl:ml-10 w-full xl:w-[80%]'>
                     <div className='h-fit mt-8 xl:mt-0'>
