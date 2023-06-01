@@ -57,13 +57,13 @@ const Footer = () => {
                         <div className='my-4 ml-0 xl:ml-5'>
                             <h5 className='text-lg font-medium mb-2'>Mail us now:</h5>
                             <p className='mb-1 underline'>
-                                <MdEmail className='inline mr-2' />
+                                <MdEmail className='inline mr-2 h-5 w-5' />
                                 <a href='https://mail.google.com/mail/?view=cm&fs=1&to=snljute@gmail.com' target='_blank' rel='noreferrer'>
                                     snljute@gmail.com
                                 </a>
                             </p>
                             <p className='mb-1 underline'>
-                                <MdEmail className='inline mr-2' />
+                                <MdEmail className='inline mr-2 h-5 w-5' />
                                 <a href='https://mail.google.com/mail/?view=cm&fs=1&to=jutetex@gmail.com' target='_blank' rel='noreferrer'>
                                     jutetex@gmail.com
                                 </a>

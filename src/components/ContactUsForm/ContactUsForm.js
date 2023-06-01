@@ -3,7 +3,7 @@ import emailjs from '@emailjs/browser';
 import { MdEmail } from 'react-icons/md';
 import { IoIosSend } from 'react-icons/io';
 import SNLButton from '../SNLButton/SNLButton';
-import { FaMapMarkerAlt } from 'react-icons/fa';
+import { FaMapMarkerAlt, FaUser } from 'react-icons/fa';
 import { BsTelephoneFill } from 'react-icons/bs';
 import { toast } from 'react-toastify';
 
@@ -84,15 +84,32 @@ const ContactUsForm = () => {
                                 <div className='my-4'>
                                     <h5 className='text-lg font-medium mb-2'>Mail us now:</h5>
                                     <p className='mb-1 underline'>
-                                        <MdEmail className='inline mr-2' />
+                                        <MdEmail className='inline mr-2 h-5 w-5' />
                                         <a href='https://mail.google.com/mail/?view=cm&fs=1&to=snljute@gmail.com' target='_blank' rel='noreferrer'>
                                             snljute@gmail.com
                                         </a>
                                     </p>
                                     <p className='mb-1 underline'>
-                                        <MdEmail className='inline mr-2' />
+                                        <MdEmail className='inline mr-2  h-5 w-5' />
                                         <a href='https://mail.google.com/mail/?view=cm&fs=1&to=jutetex@gmail.com' target='_blank' rel='noreferrer'>
                                             jutetex@gmail.com
+                                        </a>
+                                    </p>
+                                </div>
+                                <div className='my-4'>
+                                    <h5 className='text-lg font-medium mb-2'>Attention:</h5>
+                                    <p className='mb-1'>
+                                        <FaUser className='inline mr-2' />
+                                        Mr. Shohrab Hossain
+                                    </p>
+                                    <p className='mb-1'>
+                                        <BsTelephoneFill className='inline mr-2' />
+                                        (+880)1711564900
+                                    </p>
+                                    <p className='mb-1 underline'>
+                                        <MdEmail className='inline mr-2 h-5 w-5' />
+                                        <a href='https://mail.google.com/mail/?view=cm&fs=1&to=shohrabhossaindac@gmail.com' target='_blank' rel='noreferrer'>
+                                            shohrabhossaindac@gmail.com
                                         </a>
                                     </p>
                                 </div>
