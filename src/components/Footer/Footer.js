@@ -53,6 +53,7 @@ const Footer = () => {
                             <h5 className='text-lg font-medium mb-2'>Call us today:</h5>
                             <p className='mb-1'><BsTelephoneFill className='inline mr-2' /> (+8802) 47110171</p>
                             <p className='mb-1'><BsTelephoneFill className='inline mr-2' /> (+8802) 47120573</p>
+                            <p className='mb-1'><BsTelephoneFill className='inline mr-2' /> (+880) 1713488672</p>
                         </div>
                         <div className='my-4 ml-0 xl:ml-5'>
                             <h5 className='text-lg font-medium mb-2'>Mail us now:</h5>
