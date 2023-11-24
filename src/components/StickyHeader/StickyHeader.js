@@ -44,7 +44,7 @@ const StickyHeader = ({ isHeaderInViewport }) => {
                             </div>
                         </div>
                         <Link to={'/'} className='btn btn-ghost normal-case text-xl'>
-                            <img className='h-full w-full' src={logo} alt='logo' />
+                            <img className='h-full w-full' src={logo} title='Our Brand Logo' height={518} width={1309} loading='lazy' alt='Our Brand Logo' />
                         </Link>
                     </div>
                     <div className='navbar-end hidden lg:w-full lg:flex justify-end'>

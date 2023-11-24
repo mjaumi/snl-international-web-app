@@ -13,7 +13,7 @@ const Home = () => {
 
     // rendering the home page here
     return (
-        <section>
+        <section className='overflow-x-hidden'>
             <PageTitle title={'Home'} />
             <Banner />
             <AboutJute />
