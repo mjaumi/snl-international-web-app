@@ -27,7 +27,7 @@ const Blogs = () => {
 
             <PageTopBanner bgImage={'bg-banner-4-img'} titleText={'Our Blogs'} />
 
-            <div className='w-3/4 grid grid-cols-4 gap-6 mx-auto py-20'>
+            <div className='w-[95%] md:w-4/5 lg:w-3/4 grid md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-6 mx-auto py-20'>
                 {
                     blogs.map(blog => <BlogCard key={blog.id} blog={blog} />)
                 }
