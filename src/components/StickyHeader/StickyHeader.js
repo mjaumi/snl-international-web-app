@@ -20,12 +20,12 @@ const StickyHeader = ({ isHeaderInViewport }) => {
                                 <ul tabIndex={0} className='menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-md w-52'>
                                     <li><Link to={'/about-us'}>About Us</Link></li>
                                     <li tabIndex={0} className='relative group/productBtn'>
-                                        <Link>
-                                            Our Products
+                                        <div>
+                                            <p>Our Products</p>
                                             <div className='group-hover/productBtn:rotate-180 duration-300'>
                                                 <svg className='fill-current' xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24'><path d='M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z' /></svg>
                                             </div>
-                                        </Link>
+                                        </div>
                                         <div className='absolute top-full left-1/4 min-w-[250px] p-2 bg-base-100 shadow-md text-primary scale-y-0 group-hover/productBtn:scale-y-100 duration-300 origin-top rounded-md z-[9999999]'>
                                             <ul className='w-full'>
                                                 <li className='block w-full'><Link to={'/jute-products'}>Jute Products</Link></li>
