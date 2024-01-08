@@ -15,17 +15,17 @@ const ProductCard = ({ product }) => {
 
     // rendering product card here
     return (
-        <div className='grid grid-rows-snl-product-card border-2 border-primary rounded-md p-3 lg:p-5 shadow-snl bg-accent'>
+        <div className='flex flex-col border-2 border-primary rounded-md p-3 lg:p-5 shadow-snl bg-accent'>
             <div className='rounded-md overflow-hidden'>
                 <img src={product.productImageUrl ? product.productImageUrl : image} alt={product.productName} title={product.productName} height={4032} width={3024} loading='lazy' />
             </div>
             <div className='flex items-center justify-center my-3'>
                 <h3 className='font-bold text-xl text-center text-primary capitalize'>{product.productName}</h3>
             </div>
-            <div className='mb-3'>
+            <div className='mb-8'>
                 <p className='text-center text-sm'>{product.productDescription}</p>
             </div>
-            <div>
+            <div className='mt-auto'>
                 <SNLButton onClick={() => handleNavigateToContactPage()} content={'Contact us to learn more'} icon={<BiSupport className='z-50 w-4 h-4 2xl:h-5 2xl:w-5 mr-2' />} additionalClassNames={'w-full btn-neutral text-neutral after:bg-neutral text-sm 2xl:text-base'} />
             </div>
         </div>
