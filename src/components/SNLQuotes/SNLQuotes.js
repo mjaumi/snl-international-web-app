@@ -19,11 +19,11 @@ const SNLQuotes = ({ subQuote, quote }) => {
                         <div>
                             {
                                 subQuote &&
-                                <h1 className='capitalize font-dancing-script text-xl md:text-3xl xl:text-6xl font-bold xl:mt-2 mb-2'>{subQuote}</h1>
+                                <h2 className='capitalize font-dancing-script text-xl md:text-3xl xl:text-6xl font-bold xl:mt-2 mb-2'>{subQuote}</h2>
                             }
                             <div className='flex justify-center'>
                                 <RiDoubleQuotesL className='h-4 w-4 xl:h-8 xl:w-8' />
-                                <h1 className='capitalize font-dancing-script text-xl md:text-3xl xl:text-6xl font-bold xl:mt-2'>{quote}</h1>
+                                <h2 className='capitalize font-dancing-script text-xl md:text-3xl xl:text-6xl font-bold xl:mt-2'>{quote}</h2>
                                 <RiDoubleQuotesR className='ml-2 h-4 w-4 xl:h-8 xl:w-8' />
                             </div>
                         </div>

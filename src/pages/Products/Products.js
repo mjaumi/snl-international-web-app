@@ -69,7 +69,7 @@ const Products = () => {
     // rendering product page here
     return (
         <section className='mt-[90px] min-h-screen'>
-            <PageTitle title={!location.pathname.includes('diversified') ? 'Jute Products' : 'Diversified Jute products'} />
+            <PageTitle title={!location.pathname.includes('diversified') ? 'Jute Products' : 'Diversified Jute products'} description={'Products page of SNL International. Here, user can get to know about sister concerns of SNL International.'} canonical={process.env.NODE_ENV === 'development' ? !location.pathname.includes('diversified') ? 'http://localhost:3000/jute-products' : 'http://localhost:3000/diversified-jute-products' : !location.pathname.includes('diversified') ? 'http://snlbd.com/jute-products' : 'http://snlbd.com/diversified-jute-products'} />
 
             <div>
                 <div className='fixed top-[90px] z-[999] w-full py-5 shadow-snl bg-base-100'>

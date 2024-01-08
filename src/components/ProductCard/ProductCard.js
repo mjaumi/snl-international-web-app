@@ -17,7 +17,7 @@ const ProductCard = ({ product }) => {
     return (
         <div className='grid grid-rows-snl-product-card border-2 border-primary rounded-md p-3 lg:p-5 shadow-snl bg-accent'>
             <div className='rounded-md overflow-hidden'>
-                <img src={product.productImageUrl ? product.productImageUrl : image} alt={product.productName} />
+                <img src={product.productImageUrl ? product.productImageUrl : image} alt={product.productName} title={product.productName} height={4032} width={3024} loading='lazy' />
             </div>
             <div className='flex items-center justify-center my-3'>
                 <h3 className='font-bold text-xl text-center text-primary capitalize'>{product.productName}</h3>

@@ -65,7 +65,7 @@ const ContactUsForm = () => {
                             </div>
                             <div className='mt-5 text-center xl:text-left'>
                                 <div className='my-4'>
-                                    <h5 className='text-lg font-medium mb-2'>Office Address:</h5>
+                                    <h3 className='text-lg font-medium mb-2'>Office Address:</h3>
                                     <div className='flex justify-center xl:justify-start'>
                                         <FaMapMarkerAlt className='mr-2 mt-1 hidden xl:block' />
                                         <p className='mb-1 w-[70%]'><FaMapMarkerAlt className='inline mr-2  xl:hidden' /> 3 R. K. Mission Road
@@ -77,13 +77,13 @@ const ContactUsForm = () => {
                                     </div>
                                 </div>
                                 <div className='my-4'>
-                                    <h5 className='text-lg font-medium mb-2'>Call us today:</h5>
+                                    <h3 className='text-lg font-medium mb-2'>Call us today:</h3>
                                     <p className='mb-1'><BsTelephoneFill className='inline mr-2' /> (+8802) 47110171</p>
                                     <p className='mb-1'><BsTelephoneFill className='inline mr-2' /> (+8802) 47120573</p>
                                     <p className='mb-1'><BsTelephoneFill className='inline mr-2' /> (+880) 1713488672</p>
                                 </div>
                                 <div className='my-4'>
-                                    <h5 className='text-lg font-medium mb-2'>Mail us now:</h5>
+                                    <h3 className='text-lg font-medium mb-2'>Mail us now:</h3>
                                     <p className='mb-1 underline'>
                                         <MdEmail className='inline mr-2 h-5 w-5' />
                                         <a href='https://mail.google.com/mail/?view=cm&fs=1&to=snljute@gmail.com' target='_blank' rel='noreferrer'>
@@ -98,7 +98,7 @@ const ContactUsForm = () => {
                                     </p>
                                 </div>
                                 <div className='my-4'>
-                                    <h5 className='text-lg font-medium mb-2'>Attention:</h5>
+                                    <h3 className='text-lg font-medium mb-2'>Attention:</h3>
                                     <p className='mb-1'>
                                         <FaUser className='inline mr-2' />
                                         Mr. Shohrab Hossain
