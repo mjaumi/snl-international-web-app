@@ -14,7 +14,7 @@ const Home = () => {
     // rendering the home page here
     return (
         <section className='overflow-x-hidden'>
-            <PageTitle title={'Home'} description={'Home page of SNL International. Here, user can find all the information & short briefing about SNL International.'} canonical={process.env.NODE_ENV === 'development' ? 'http://localhost:3000' : 'http://snlbd.com'} />
+            <PageTitle title={'Home'} description={'Home page of SNL International. Here, user can find all the information & short briefing about SNL International.'} canonical={process.env.NODE_ENV === 'development' ? 'http://localhost:3000' : 'http://www.snlbd.com'} />
             <Banner />
             <AboutJute />
             <FootprintsAroundTheWorld />

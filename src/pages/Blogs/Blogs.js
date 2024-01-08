@@ -23,7 +23,7 @@ const Blogs = () => {
     // rendering blogs page here
     return (
         <section>
-            <PageTitle title={'Blogs'} description={'Blogs page of SNL International. Here, user can get to know about all the blogs of SNL International.'} canonical={process.env.NODE_ENV === 'development' ? 'http://localhost:3000/blogs' : 'http://snlbd.com/blogs'} />
+            <PageTitle title={'Blogs'} description={'Blogs page of SNL International. Here, user can get to know about all the blogs of SNL International.'} canonical={process.env.NODE_ENV === 'development' ? 'http://localhost:3000/blogs' : 'http://www.snlbd.com/blogs'} />
 
             <PageTopBanner bgImage={'bg-banner-4-img'} titleText={'Our Blogs'} />
 

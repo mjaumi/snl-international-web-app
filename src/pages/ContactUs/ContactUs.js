@@ -13,7 +13,7 @@ const ContactUs = () => {
     // rendering contact us page here
     return (
         <section>
-            <PageTitle title={'Contact Us'} description={'Contact us page of SNL International. Here, user can contact with any personnel of SNL International.'} canonical={process.env.NODE_ENV === 'development' ? 'http://localhost:3000/contact-us' : 'http://snlbd.com/contact-us'} />
+            <PageTitle title={'Contact Us'} description={'Contact us page of SNL International. Here, user can contact with any personnel of SNL International.'} canonical={process.env.NODE_ENV === 'development' ? 'http://localhost:3000/contact-us' : 'http://www.snlbd.com/contact-us'} />
             <PageTopBanner bgImage={'bg-banner-3-img'} titleText={'Get In Touch With Us'} />
             <ContactUsForm />
             <SNLQuotes subQuote={'We believe in,'} quote={'Leaving a better world for future'} />

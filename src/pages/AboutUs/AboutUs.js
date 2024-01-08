@@ -14,7 +14,7 @@ const AboutUs = () => {
     // rendering about us page here
     return (
         <section>
-            <PageTitle title={'About Us'} description={'About us page of SNL International. Here, user can find all the information about SNL International.'} canonical={process.env.NODE_ENV === 'development' ? 'http://localhost:3000/about-us' : 'http://snlbd.com/about-us'} />
+            <PageTitle title={'About Us'} description={'About us page of SNL International. Here, user can find all the information about SNL International.'} canonical={process.env.NODE_ENV === 'development' ? 'http://localhost:3000/about-us' : 'http://www.snlbd.com/about-us'} />
             <PageTopBanner bgImage={'bg-banner-3-img'} titleText={'About Us'} />
             <AboutSNL />
             <WordsFromCEO />
